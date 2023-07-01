@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'openSans-700';
+  src: url(../assets/fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'openSans-400';
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'openSans-300';
+  src: url(../assets/fonts/OpenSans-Light.ttf);
+}
+
+$font700: 'openSans-700', Arial, sans-serif;
+$font400: 'openSans-400', Arial, sans-serif;
+$font300: 'openSans-300', Arial, sans-serif;
+
+$blue: #00009c;
+$violet: rgb(120, 67, 233);
+$white1: rgb(255, 255, 255);
+$white2: rgb(251, 251, 251);
+$black1: rgb(0, 0, 0);
+$black2: rgb(17, 17, 17);
+$black3: rgb(40, 40, 40);
+$grey1: rgb(231, 231, 231);
+$grey2: rgb(102, 102, 102);
+
+:export {
+  blue: $blue;
+  violet: $violet;
+  white1: $white1;
+  white2: $white2;
+  black1: $black1;
+  black2: $black2;
+  black3: $black3;
+  grey1: $grey1;
+  grey2: $grey2;
+  font700: $font700;
+  font400: $font400;
+  font300: $font300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white1;
+  font-family: $font400;
+  font-weight: 400;
+  color: $grey2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
