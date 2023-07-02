@@ -1,3 +1,48 @@
+#light header{
+  background-color: $white2;
+  a{
+    color: $grey2;
+  }
+}
+#dark header{
+  background-color: $black3;
+  color: $white2;
+    a{
+    color: $white2;
+  }
+}
 header {
+  
+  width: 100%;
+  position: fixed;
   min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    gap: 15px;
+    padding: 20px 10px;
+  }
+  img {
+    height: 25px;
+    width: 27px;
+  }
+
+  button {
+    height: 40px;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 10px;
+      li {
+        padding: 15px;
+      }
+    }
+  }
 }

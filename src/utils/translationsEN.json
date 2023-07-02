@@ -1,0 +1,9 @@
+{
+  "intro": {
+    "title": "Hi, I'm Daniel Gonzalez",
+    "description": {
+      "part1": "A junior Frontend Developer focused on React",
+      "part2": "motivated to build the interface of your web applications"
+    }
+  }
+}

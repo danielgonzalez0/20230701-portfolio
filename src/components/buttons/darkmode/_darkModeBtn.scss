@@ -1,0 +1,67 @@
+.toggle {
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.checkbox {
+  display: none;
+}
+.icon {
+  display: block;
+  height: 40px;
+  width: 50%;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1;
+  &:first-child {
+    padding-left: 10px;
+  }
+}
+.ball {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 7px;
+  transition: 0.2s;
+}
+
+/* ---- ---- Light Mode ---- ---- */
+
+#light .toggle {
+  background: linear-gradient(145deg, rgba($white1, 0.8), rgba($grey1, 0.8));
+}
+#light .icon--light {
+  color: rgba($grey1, 1);
+}
+#light .icon--dark {
+  color: #151d2a;
+}
+#light .ball {
+  background: linear-gradient(145deg, rgba($grey2, 0.8), rgba($black3, 0.8));
+}
+/* ---- ---- Dark Mode ---- ---- */
+
+#dark .toggle {
+  background: linear-gradient(145deg, rgba($grey2, 0.8), rgba($black3, 0.8));
+}
+#dark .icon--light {
+  color: $grey1;
+}
+#dark .icon--dark {
+  color: #0e131b;
+}
+#dark .ball {
+  background-color: $grey1;
+  transition: 0.3s;
+  transform: translateX(33px);
+}
