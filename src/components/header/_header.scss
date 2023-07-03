@@ -1,20 +1,23 @@
-#light header{
+#light header {
   background-color: $white2;
-  a{
+    box-shadow: -12px 2px 20px 0px $grey2;
+  a {
     color: $grey2;
   }
 }
-#dark header{
-  background-color: $black3;
+#dark header {
+  background-color: $black2;
+  box-shadow: -12px 2px 20px 0px $grey2;
+
   color: $white2;
-    a{
+  a {
     color: $white2;
   }
 }
 header {
-  
   width: 100%;
   position: fixed;
+  z-index: 10;
   min-height: 70px;
   display: flex;
   align-items: center;

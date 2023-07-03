@@ -44,10 +44,10 @@
     &:after {
       position: absolute;
       content: '';
-      top: 50%;
+      top: 38%;
       left: 50%;
       width: 110%;
-      transform: translateX(-50%) scaleX(0);
+      transform: translate(-50%) scaleX(0);
       transform-origin: center;
       opacity: 0;
       animation-name: revealSpan;

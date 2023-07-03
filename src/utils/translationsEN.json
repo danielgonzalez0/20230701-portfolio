@@ -5,5 +5,16 @@
       "part1": "A junior Frontend Developer focused on React",
       "part2": "motivated to build the interface of your web applications"
     }
+  },
+  "about": {
+    "part1": "A passion for programming, a determination to reinvent myself, and expertise in front-end web development with a specialization in React. At 42 years old, I am proud to embark on an exciting career as <strong>a junior web developer</strong>. ",
+    "part2": "After 15 years of experience on <strong>controlling</strong> in various companies, I decided to switch to <strong>front-end development</strong>. I have followed training courses at <strong>OpenClassrooms</strong> as a web developer and front-end developer specialising in <strong>React</strong>.",
+    "part3": "Over the past 2 years, I was able to acquire a wealth of skills and knowledge through a variety of projects in different programming languages and in different professional situations. I'm aware that I still have a long way to go to improve my skills, and I'm more motivated than ever to learn and improve.",
+    "part4": "When I'm not behind a computer, I enjoy spending time with my family, playing football with my friends or playing video games.I'm open to job offers that allow me to learn and progress. If you have a good opportunity that matches my skills and experience, don't hesitate to <strong>contact me</strong>!",
+    "part5": "What I have learnt in my professional life: ",
+    "part6": "Problem solving",
+    "part7": "Collaboration and team spirit",
+    "part8": "Adaptability and organisation",
+    "part9": "Time management, rigour and autonomy"
   }
 }

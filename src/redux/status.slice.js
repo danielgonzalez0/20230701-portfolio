@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const statusSlice = createSlice({
   name: 'status',
   initialState: {
-    isDarkMode: 'light',
+    isDarkMode: 'dark',
     language: 'en',
   },
   reducers: {
