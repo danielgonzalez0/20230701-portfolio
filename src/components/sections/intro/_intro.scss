@@ -1,16 +1,32 @@
 #light #intro {
-    background: linear-gradient(to right, rgba($grey2, 0.2), rgba($grey1, 0.5)),
+  background: linear-gradient(to right, rgba($grey2, 0.2), rgba($grey1, 0.5)),
     url(../../../assets/bg-white.png);
-    h1, h2{
-       color: $black3;
-    }
+  background-size: cover;
+  h1,
+  h2 {
+    color: $black3;
+  }
+
+  .intro_wrapper:after {
+    border: solid $black3 2px;
+  }
 }
 #dark #intro {
-      background: linear-gradient(to right, rgba($grey1, 0.2), rgba($grey2, 0.5)),
+  background: linear-gradient(to right, rgba($grey1, 0.2), rgba($grey2, 0.5)),
     url(../../../assets/bg-black.png);
-    h1, h2{
-       color: $white2;
-    }
+  background-size: cover;
+  h1,
+  h2 {
+    color: $white2;
+  }
+
+  h1:after {
+    border: solid $white2 2px;
+  }
+
+  .intro_wrapper:after {
+    border: solid $white2 2px;
+  }
 }
 
 #intro {
@@ -22,8 +38,23 @@
   justify-content: center;
 
   .intro_wrapper {
+    position: relative;
     max-width: 75%;
     text-align: center;
+    &:after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      width: 110%;
+      transform: translateX(-50%) scaleX(0);
+      transform-origin: center;
+      opacity: 0;
+      animation-name: revealSpan;
+      animation-duration: 1.5s;
+      animation-delay: 0.1s;
+      animation-fill-mode: both;
+    }
   }
 
   h1 {
@@ -33,6 +64,12 @@
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
+    opacity: 0;
+    animation-name: revealUp;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
   }
 
   h2 {
@@ -42,6 +79,11 @@
     flex-direction: column;
     align-items: center;
     line-height: 1.6;
+    opacity: 0;
+    animation-name: revealDown;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
   }
 
   //media queries
