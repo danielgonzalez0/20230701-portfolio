@@ -17,8 +17,6 @@ import translationFR from './translationsFR.json';
    },
  };
 
- console.log(resources);
-
 i18n
   // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
   // learn more: https://github.com/i18next/i18next-http-backend
@@ -35,7 +33,7 @@ i18n
     resources,
     lng: 'en', // start with english
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

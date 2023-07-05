@@ -51,6 +51,9 @@ body {
   font-family: $font400;
   font-weight: 400;
   color: $grey2;
+  &:has(#black){
+    background: $black3;
+  }
 }
 
 html {
@@ -64,4 +67,15 @@ li {
 a,
 a:visited {
   text-decoration: none;
+}
+
+
+
+.animeOpen {
+    -webkit-animation-name: animeOpen;
+    animation-name: animeOpen;
+        -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }

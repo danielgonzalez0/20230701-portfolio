@@ -17,7 +17,7 @@
   }
 
   .wrapper {
-    margin: 0 auto 60px;
+    margin: 120px auto 120px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@
 }
 h2 {
   text-transform: uppercase;
-  margin: 60px 0 40px 0;
+  margin: 0 0 40px 0;
   font-size: 2rem;
   font-family: $font300;
 }
@@ -51,7 +51,7 @@ h2 {
     line-height: 30px;
   }
 }
-.about-soft {
+.about-soft, .about-work {
   background-color: $grey1;
   border-radius: 5px;
   padding: 25px;
@@ -60,6 +60,10 @@ h2 {
     font-size: 1.3rem;
     color: $grey2;
   }
+}
+
+.about-work{
+  margin-top: 60px;
 }
 
 .about-soft-content {
@@ -77,4 +81,31 @@ h2 {
 
 .about-soft-card {
   width: 150px;
+}
+
+.about-logo-container {
+  ul {
+    margin: 0 auto;
+    max-width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+  }
+  li {
+    min-width: 100px;
+    max-width: 200px;
+    height: auto;
+    padding: 0 15px 15px 15px;
+  }
+
+  img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .bg {
+    background: $white2;
+  }
 }

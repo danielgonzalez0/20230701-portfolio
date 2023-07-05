@@ -1,13 +1,20 @@
 import React from 'react';
 import profilImg from '../../../assets/daniel.jpg';
+import SGLogo from '../../../assets/logo/societe-generale-2.svg';
+import alphabetLogo from '../../../assets/logo/Alphabet.jpg';
+import gaumontLogo from '../../../assets/logo/Gaumont_logo_PNG1.png';
+import KBLLogo from '../../../assets/logo/KBL.png';
+import fcaLogo from '../../../assets/logo/fca-banklogo.png';
 import { Trans, useTranslation } from 'react-i18next';
 
+
 const About = () => {
+
   const { t } = useTranslation();
   return (
     <section id="about">
       <div className="wrapper">
-        <h2>A little about me</h2>
+        <h2>{t('about.title')}</h2>
         <div className="about-profil">
           <img src={profilImg} alt="potrait" />
         </div>
@@ -46,6 +53,31 @@ const About = () => {
             <div className="about-soft-card">
               <span className="fa-regular fa-clock"></span>
               <p>{t('about.part9')}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-work">
+          <p>{t('about.part10')}</p>
+          <div className="about-work-content">
+            <div className="about-logo-container">
+              <ul>
+                <li>
+                  <img className="bg" src={fcaLogo} alt="fca logo" />
+                </li>
+                <li>
+                  <img src={alphabetLogo} alt="Alphabet logo" />
+                </li>
+                <li>
+                  <img className="bg" src={KBLLogo} alt="KBL logo" />
+                </li>
+                <li>
+                  <img className="bg" src={SGLogo} alt="SG logo" />
+                </li>
+                <li>
+                  <img className="bg" src={gaumontLogo} alt="Gaumont logo" />
+                </li>
+              </ul>
             </div>
           </div>
         </div>

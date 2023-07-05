@@ -9,14 +9,6 @@ import LanguageBtn from '../buttons/languageSwitch/LanguageBtn';
 const Header = () => {
   const isDarkMode = useSelector((state) => state.status.isDarkMode);
 
-
-  let scrollYenPourcentage =
-    (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-  console.log('scrollYenPourcentage', scrollYenPourcentage);
-  console.log('window.innerHeight', window.innerHeight);
-  console.log('window.scrollY', window.scrollY);
-  console.log('document.body.offsetHeight', document.body.offsetHeight);
-
   return (
     <header>
       <div className="logo">

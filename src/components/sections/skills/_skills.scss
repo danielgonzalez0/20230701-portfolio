@@ -1,4 +1,141 @@
+#dark #skills {
+  color: $white2;
+  background: linear-gradient(to bottom, rgba($black1, 0.5), rgba($black3, 0.4)),
+    url(../../../assets/img/computer-dark.jpg) bottom center / cover fixed;
+
+  .skills-content {
+  ul {
+    background: rgba($white2, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+  .skills-logo-container {
+    img {
+      filter: grayscale(30%) sepia(10%) brightness(55%);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}
+#light #skills {
+  color: $black3;
+  background: linear-gradient(to bottom, rgba($white1, 0.5), rgba($white2, 0.8)),
+    transparent url(../../../assets/img/computer-light.jpg) bottom center /
+      cover fixed;
+
+    .skills-content {
+  ul {
+    background: rgba($grey2, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+}
+
+  .skills-logo-container {
+    img {
+      filter: grayscale(100%);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}
+
 #skills {
   min-height: 500px;
   background-color: $grey1;
+  padding: 120px 0;
+
+  h2 {
+    margin: 0;
+  }
 }
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .skill-desc {
+    max-width: 600px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 32px;
+    padding: 40px 0;
+    margin: 0 20px;
+  }
+}
+
+.skills-content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  p {
+    text-align: center;
+    margin: 30px 0 30px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}
+
+.skills-logo-section {
+  flex: 0 0 60%;
+}
+
+.skills-logo-container {
+  ul {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  li {
+    width: 96px;
+    height: 120px;
+    padding: 0 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 100%;
+  }
+  .bg {
+    background: $white2;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+.skills-other-section {
+  flex: 0 0 40%;
+  span {
+    margin-left: 15px;
+  }
+}
+
+.skills-other-list-card {
+  max-width: 300px;
+  margin: 0 auto;
+
+  p {
+    text-align: start;
+  }
+
+  ul {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+

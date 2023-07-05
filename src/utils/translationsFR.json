@@ -6,16 +6,23 @@
       "part2": "motivé à construire l'interface de vos applications web"
     }
   },
-  "about":{
-    "part1":"Une passion pour la programmation, une détermination à se réinventer et une expertise dans le développement web front end avec une spécialisation en React. À 42 ans, je suis fier de me lancer dans une carrière passionnante en tant que <strong>développeur web junior</strong>.",
-    "part2":"Après 15 ans d'expérience en <strong>contrôle de gestion</strong> dans diverses grandes entreprises, j'ai décidé de me reconvertir dans <strong>le développement front-end</strong>. J'ai suivi des formations chez <strong>OpenClassrooms</strong> en tant que développeur web et développeur front-end spécialisé dans <strong>React</strong>.",
-    "part3":"Au cours des deux dernières années, j'ai pu acquérir de nombreuses compétences et connaissances à travers une variété de projets dans différents langages de programmation et dans différentes situations professionnelles. Conscient qu'il me reste encore beaucoup de chemin à parcourir pour améliorer mes compétences, je suis plus motivé que jamais pour apprendre et m'améliorer.",
-    "part4":"Lorsque je ne suis pas derrière un ordinateur, j'aime passer du temps avec ma famille, jouer au football avec mes amis ou jouer à des jeux vidéo. Si vous avez une bonne opportunité qui correspond à mes compétences et à mon expérience, n'hésitez pas à me <strong>contacter</strong> !",
-    "part5":"Ce que j'ai acquis durant ma vie professionnelle: ",
-    "part6":"Résolution de problèmes",
-    "part7":"Travail en collaboration et esprit d'équipe",
-    "part8":"Capacité d'adaptation et organisation",
-    "part9":"Gestion du temps, rigueur et autonomie"
-    
+  "about": {
+    "title": "Un peu plus à propos de moi",
+    "part1": "Une passion pour la programmation, une détermination à se réinventer et une expertise dans le développement web front end avec une spécialisation en React. À 42 ans, je suis fier de me lancer dans une carrière passionnante en tant que <strong>développeur web junior</strong>.",
+    "part2": "Après 15 ans d'expérience en <strong>contrôle de gestion</strong> dans diverses grandes entreprises, j'ai décidé de me reconvertir dans <strong>le développement front-end</strong>. J'ai suivi des formations chez <strong>OpenClassrooms</strong> en tant que développeur web et développeur front-end spécialisé dans <strong>React</strong>.",
+    "part3": "Au cours des deux dernières années, j'ai pu acquérir de nombreuses compétences et connaissances à travers une variété de projets dans différents langages de programmation et dans différentes situations professionnelles. Conscient qu'il me reste encore beaucoup de chemin à parcourir pour améliorer mes compétences, je suis plus motivé que jamais pour apprendre et m'améliorer.",
+    "part4": "Lorsque je ne suis pas derrière un ordinateur, j'aime passer du temps avec ma famille, jouer au football avec mes amis ou jouer à des jeux vidéo. Si vous avez une bonne opportunité qui correspond à mes compétences et à mon expérience, n'hésitez pas à me <strong>contacter</strong> !",
+    "part5": "Ce que j'ai acquis durant ma vie professionnelle: ",
+    "part6": "Résolution de problèmes",
+    "part7": "Travail en collaboration et esprit d'équipe",
+    "part8": "Capacité d'adaptation et organisation",
+    "part9": "Gestion du temps, rigueur et autonomie",
+    "part10": "Là où j'ai travaillé:"
+  },
+  "skills": {
+    "tilte": "Compétences",
+    "intro": "J'apprends le développement web depuis environ 2 ans, et je suis toujours désireux d'en apprendre davantage dans ce secteur en constante évolution.",
+    "part1": "Quelques technologies avec lesquelles j'ai travaillé:"
+  
   }
 }
