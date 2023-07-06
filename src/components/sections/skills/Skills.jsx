@@ -22,15 +22,10 @@ const Skills = () => {
   const darkMode = useSelector((state) => state.status.isDarkMode);
   const language = useSelector((state) => state.status.language);
 
-  // let scrollYenPourcentage =
-  //   (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-  // console.log('scrollYenPourcentage', scrollYenPourcentage);
-  // console.log('window.innerHeight', window.innerHeight);
-  // console.log('window.scrollY', window.scrollY);
-  // console.log('document.body.offsetHeight', document.body.offsetHeight);
+
   return (
     <section id="skills">
-      <div className="skills-container animeOpen">
+      <div className="skills-container">
         <h2>{t('skills.title')}</h2>
         <p className="skill-desc">{t('skills.intro')}</p>
         <div className="skills-content">

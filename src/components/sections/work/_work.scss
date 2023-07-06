@@ -1,5 +1,16 @@
-#work {
-  min-height: 500px;
-  background-color: $grey2;
+#light #work {
+  background: $white2;
+  color: $grey2;
+}
+#dark #work {
+  background: $black3;
   color: $white2;
+}
+
+#work {
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 120px 0 60px;
+  }
 }

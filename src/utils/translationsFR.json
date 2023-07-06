@@ -22,7 +22,9 @@
   "skills": {
     "tilte": "Compétences",
     "intro": "J'apprends le développement web depuis environ 2 ans, et je suis toujours désireux d'en apprendre davantage dans ce secteur en constante évolution.",
-    "part1": "Quelques technologies avec lesquelles j'ai travaillé:"
-  
+    "part1": "Quelques technologies que j'ai utilisé:"
+  },
+  "work":{
+    "title": "Quelques projets réalisés"
   }
 }

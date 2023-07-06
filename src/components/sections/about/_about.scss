@@ -1,10 +1,31 @@
 #light #about {
   background-color: $white2;
+  strong {
+    color: $violet;
+  }
+  
+.about-soft-content {
+  color: $violet;
+}
 }
 
 #dark #about {
   background-color: $black3;
   color: $grey1;
+  strong {
+    color: $turquoise;
+  }
+  .about-soft-content {
+  color: $turquoise;
+}
+
+.about-soft,
+.about-work {
+  background-color: lighten($black3, 10);
+  p{
+    color: $white2;
+  }
+}
 }
 
 #about {
@@ -12,11 +33,11 @@
   display: flex;
 
   strong {
-    color: $violet;
     font-size: 1.2rem;
   }
 
   .wrapper {
+    opacity: 0;
     margin: 120px auto 120px;
     flex-direction: column;
     align-items: center;
@@ -51,7 +72,8 @@ h2 {
     line-height: 30px;
   }
 }
-.about-soft, .about-work {
+.about-soft,
+.about-work {
   background-color: $grey1;
   border-radius: 5px;
   padding: 25px;
@@ -62,7 +84,7 @@ h2 {
   }
 }
 
-.about-work{
+.about-work {
   margin-top: 60px;
 }
 
@@ -87,11 +109,11 @@ h2 {
   ul {
     margin: 0 auto;
     max-width: 500px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 20px;
-      justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
   }
   li {
     min-width: 100px;

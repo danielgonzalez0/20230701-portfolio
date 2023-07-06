@@ -1,15 +1,15 @@
 #dark #skills {
   color: $white2;
   background: linear-gradient(to bottom, rgba($black1, 0.5), rgba($black3, 0.4)),
-    url(../../../assets/img/computer-dark.jpg) bottom center / cover fixed;
+    url(https://i.imgur.com/QZki6Dy.jpg) bottom center / cover fixed;
 
   .skills-content {
-  ul {
-    background: rgba($white2, 0.2);
-    padding: 20px;
-    border-radius: 10px;
+    ul {
+      background: rgba($white2, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+    }
   }
-}
 
   .skills-logo-container {
     img {
@@ -27,14 +27,14 @@
     transparent url(../../../assets/img/computer-light.jpg) bottom center /
       cover fixed;
 
-    .skills-content {
-  ul {
-    background: rgba($grey2, 0.3);
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: 500;
+  .skills-content {
+    ul {
+      background: rgba($grey2, 0.3);
+      padding: 20px;
+      border-radius: 10px;
+      font-weight: 500;
+    }
   }
-}
 
   .skills-logo-container {
     img {
@@ -58,6 +58,7 @@
 }
 
 .skills-container {
+  opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +77,9 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
+  min-width: 350px;
   width: 100%;
+  max-width: 900px;
   p {
     text-align: center;
     margin: 30px 0 30px;
@@ -138,4 +141,9 @@
   }
 }
 
-
+//media queries
+@media screen and (max-width: 850px) {
+  .skills-content {
+    flex-direction: column;
+  }
+}

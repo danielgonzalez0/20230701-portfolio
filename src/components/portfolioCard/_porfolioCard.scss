@@ -1,0 +1,126 @@
+#light #work {
+  a {
+        background: $violet;
+    border: 2px solid $violet;
+    color: $white2;
+    &:hover {
+      border: 2px solid $grey1;
+      background: $grey1;
+      color: $violet;
+      &:focus-visible {
+        outline: 1px solid $white2;
+      }
+    }
+  }
+
+  .card-tags-container {
+  li {
+    color: $black3;
+    background: darken($white2, 10);
+  }
+}
+
+  .divider{
+    background-color: $violet;
+}
+}
+
+.card-container {
+  width: 80%;
+  margin: 0 auto;
+  padding:0 0 30px 0;
+
+}
+.screenshots {
+  position: relative;
+  overflow: hidden;
+  img {
+    border-radius: 2px;
+    box-shadow: 0 5px 10px 0 rgba($black1, 0.75);
+  }
+
+  img:nth-child(1) {
+    width: 70%;
+  }
+  img:nth-child(2) {
+    position: absolute;
+    right: 7%;
+    bottom: 0;
+    width: 30%;
+  }
+  img:nth-child(3) {
+    width: 12%;
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+  }
+}
+
+.card-title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 46px;
+  margin: 20px 0;
+
+  .card-btn-container {
+    display: flex;
+  }
+
+  h3 {
+    flex: 1 1 0%;
+    text-transform: uppercase;
+  }
+
+  a {
+    padding: 5px 10px;
+    background: $black3;
+    border: 2px solid $turquoise;
+    border-radius: 3px;
+    margin: 0 5px;
+    color: $turquoise;
+    font-family: $font700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    &:hover {
+      border: 2px solid $turquoise;
+      background: $turquoise;
+      color: $white2;
+      &:focus-visible {
+        outline: 1px solid $turquoise;
+      }
+    }
+  }
+}
+
+.card-description {
+  line-height: 1.5rem;
+  margin: 20px 0;
+}
+
+.card-tags-container {
+    margin: 40px 0;;
+  li {
+    display: inline-block;
+    padding: 7px 7px 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: $grey1;
+    background: lighten($black3, 10);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.divider{
+    display: block;
+    margin: 30px 0;
+    width: 100px;
+    height: 2px;
+    background-color: $turquoise;
+}

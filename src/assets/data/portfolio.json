@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "project": "kasa",
+    "title": {
+      "en": "Kasa",
+      "fr": "Kasa"
+    },
+    "cover": {
+      "desktop": "https://i.imgur.com/8SwCfTX.png",
+      "tablet": "https://i.imgur.com/8cLZ6sc.png",
+      "mobile": "https://i.imgur.com/qG7mqWp.png"
+    },
+    "pictures": [
+      "https://i.imgur.com/oE6i6AV.png",
+      "https://i.imgur.com/jZCzprJ.png",
+      "https://i.imgur.com/QHdEzpQ.png",
+      "https://i.imgur.com/HPYZv6y.png",
+      "https://i.imgur.com/4oyYyp2.png"
+    ],
+    "description": {
+      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines for image galleries, dropdown buttons and global structure of the application like logical structure, 1 composent per file, using props and states,...",
+      "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif était de développer une application web avec React et React Router, en utilisant des maquettes Figma comme base. Des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
+    },
+    "features": {
+      "en": [
+        "react router",
+        "functional components",
+        "burger menu for navivation",
+        "carrousel for image galleries",
+        "keyboard navigation for image galleries",
+        "dropdown button",
+        "responsive design",
+        "errors handling for url"
+      ],
+      "fr": [
+        "react router",
+        "composants fonctionnels",
+        "burger menu pour la navigation",
+        "carrousel pour les galeries d'images",
+        "navigation au clavier pour les galeries d'images",
+        "bouton déroulant",
+        "responsive design",
+        "gestion des erreurs pour les urls"
+      ]
+    },
+    "keywords": [
+      "Équipements de base",
+      "Micro-Ondes",
+      "Douche italienne",
+      "Frigo",
+      "WIFI"
+    ],
+    "tags": [
+      "react",
+      "react-router-dom",
+      "javascript",
+      "sass",
+      "prop-types",
+      "accessibility"
+    ],
+    "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
+    "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
+  },
+  {
+    "id": 2,
+    "project": "Kasa",
+    "title": {
+      "en": "Kasa",
+      "fr": "Kasa"
+    },
+    "cover": {
+      "desktop": "https://i.imgur.com/8SwCfTX.png",
+      "tablet": "https://i.imgur.com/8cLZ6sc.png",
+      "mobile": "https://i.imgur.com/qG7mqWp.png"
+    },
+    "pictures": [
+      "https://i.imgur.com/oE6i6AV.png",
+      "https://i.imgur.com/jZCzprJ.png",
+      "https://i.imgur.com/QHdEzpQ.png",
+      "https://i.imgur.com/HPYZv6y.png",
+      "https://i.imgur.com/4oyYyp2.png"
+    ],
+    "description": {
+      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines for image galleries, dropdown buttons and global structure of the application like logical structure, 1 composent per file, using props and states,...",
+      "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif était de développer une application web avec React et React Router, en utilisant des maquettes Figma comme base. Des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
+    },
+    "features": {
+      "en": [
+        "react router",
+        "functional components",
+        "burger menu for navivation",
+        "carrousel for image galleries",
+        "keyboard navigation for image galleries",
+        "dropdown button",
+        "responsive design",
+        "errors handling for url"
+      ],
+      "fr": [
+        "react router",
+        "composants fonctionnels",
+        "burger menu pour la navigation",
+        "carrousel pour les galeries d'images",
+        "navigation au clavier pour les galeries d'images",
+        "bouton déroulant",
+        "responsive design",
+        "gestion des erreurs pour les urls"
+      ]
+    },
+    "keywords": [
+      "Équipements de base",
+      "Micro-Ondes",
+      "Douche italienne",
+      "Frigo",
+      "WIFI"
+    ],
+    "tags": [
+      "react",
+      "react-router-dom",
+      "javascript",
+      "sass",
+      "prop-types",
+      "accessibility"
+    ],
+    "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
+    "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
+  }
+]

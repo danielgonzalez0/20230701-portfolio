@@ -23,5 +23,8 @@
     "title": "Skills",
     "intro": "I've been learning web development for about 2 years now, and I'm always eager to learn more in this fast paced industry.",
     "part1": "Some technologies I've worked with:"
+  },
+  "work":{
+    "title":"Some of My Work"
   }
 }

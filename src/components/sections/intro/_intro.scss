@@ -10,6 +10,10 @@
   .intro_wrapper:after {
     border: solid $black3 2px;
   }
+
+  a {
+    color: $black3;
+  }
 }
 #dark #intro {
   background: linear-gradient(to right, rgba($grey1, 0.2), rgba($grey2, 0.5)),
@@ -28,9 +32,13 @@
     border: solid $white2 2px;
   }
 }
+a {
+  color: $white2;
+}
 
 #intro {
-  height: 100vh;
+  position: relative;
+  height: 85vh;
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -84,6 +92,37 @@
     animation-duration: 0.5s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+  }
+
+  a {
+    position: absolute;
+    bottom: 50px;
+    width: 60px;
+    text-align: center;
+    img {
+      position: relative;
+      z-index: 2;
+      width: 25px;
+      height: 25px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        opacity: 0;
+      }
+      &:hover ~ .chevron {
+        opacity: 1;
+      }
+    }
+
+    .chevron {
+      position: absolute;
+      left: 50%;
+      width: 120px;
+      transform: translateX(-50%);
+      bottom: -10px;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+    }
   }
 
   //media queries
