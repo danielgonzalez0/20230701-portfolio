@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 const PortfolioCard = ({ data }) => {
   const language = useSelector((state) => state.status.language);
-  console.log(data);
+
 
   return (
     <div className="card-container">
@@ -37,9 +37,11 @@ const PortfolioCard = ({ data }) => {
       <div className="card-title">
         <h3>{language === 'fr' ? data.title.fr : data.title.en}</h3>
         <div className="card-btn-container">
-          <a target="_blank" rel="noreferrer" href={data.urlDemo}>
-            Demo
-          </a>
+          {data.urlDemo && (
+            <a target="_blank" rel="noreferrer" href={data.urlDemo}>
+              Demo
+            </a>
+          )}
           <a target="_blank" rel="noreferrer" href={data.urlCode}>
             Code
           </a>
@@ -50,12 +52,12 @@ const PortfolioCard = ({ data }) => {
       </div>
       <div className="card-tags-container">
         <ul>
-          {data.tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
-          ))}
+          {language === 'fr'
+            ? data.tags.fr.map((tag, index) => <li key={index}>{tag}</li>)
+            : data.tags.en.map((tag, index) => <li key={index}>{tag}</li>)}
         </ul>
       </div>
-      <span className='divider'></span>
+      <span className="divider"></span>
     </div>
   );
 };
@@ -83,7 +85,10 @@ PortfolioCard.propTypes = {
       fr: PropTypes.arrayOf(PropTypes.string),
     }),
     keywords: PropTypes.arrayOf(PropTypes.string),
-    tags: PropTypes.arrayOf(PropTypes.string),
+    tags: PropTypes.shape({
+      en: PropTypes.arrayOf(PropTypes.string),
+      fr: PropTypes.arrayOf(PropTypes.string),
+    }),
     urlCode: PropTypes.string,
     urlDemo: PropTypes.string,
   }),

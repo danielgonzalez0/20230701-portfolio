@@ -19,8 +19,8 @@
       "https://i.imgur.com/4oyYyp2.png"
     ],
     "description": {
-      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines for image galleries, dropdown buttons and global structure of the application like logical structure, 1 composent per file, using props and states,...",
-      "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif était de développer une application web avec React et React Router, en utilisant des maquettes Figma comme base. Des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
+      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the main goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines were required for image galleries, dropdown buttons. For the global structure of the application, we have to use logical structure, 1 composent per file, props and states,...",
+      "fr": "Le projet fait partie d'une formation Openclassrooms spécialisée dans le développement front-end avec React. L'objectif était de développer une application web avec React et React Router. Une maquette figma et des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
     },
     "features": {
       "en": [
@@ -45,25 +45,32 @@
       ]
     },
     "keywords": [
-      "Équipements de base",
-      "Micro-Ondes",
-      "Douche italienne",
-      "Frigo",
-      "WIFI"
+      "react-application",
+      "sites-vitrines"
     ],
-    "tags": [
-      "react",
-      "react-router-dom",
-      "javascript",
-      "sass",
-      "prop-types",
-      "accessibility"
-    ],
+    "tags": {
+      "en": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "prop-types",
+        "accessibility"
+      ],
+      "fr": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "prop-types",
+        "accessibilité"
+      ]
+    },
     "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
     "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
   },
   {
-    "id": 2,
+    "id": 3,
     "project": "Kasa",
     "title": {
       "en": "Kasa",
@@ -114,14 +121,23 @@
       "Frigo",
       "WIFI"
     ],
-    "tags": [
-      "react",
-      "react-router-dom",
-      "javascript",
-      "sass",
-      "prop-types",
-      "accessibility"
-    ],
+  "tags": {
+      "en": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "prop-types",
+        "accessibility"
+      ],
+      "fr": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "prop-types",
+        "accessibilité"
+      ]},
     "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
     "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
   }

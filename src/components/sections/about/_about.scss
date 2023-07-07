@@ -3,10 +3,10 @@
   strong {
     color: $violet;
   }
-  
-.about-soft-content {
-  color: $violet;
-}
+
+  .about-soft-content {
+    color: $violet;
+  }
 }
 
 #dark #about {
@@ -16,16 +16,16 @@
     color: $turquoise;
   }
   .about-soft-content {
-  color: $turquoise;
-}
-
-.about-soft,
-.about-work {
-  background-color: lighten($black3, 10);
-  p{
-    color: $white2;
+    color: $turquoise;
   }
-}
+
+  .about-soft,
+  .about-work {
+    background-color: lighten($black3, 10);
+    p {
+      color: $white2;
+    }
+  }
 }
 
 #about {

@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import  statusSlice from './status.slice';
+import statusSlice from './status.slice';
+import projectsSlice from './projects.slice';
 
 const rootReducer = combineReducers({
-status:  statusSlice
+  status: statusSlice,
+  projects: projectsSlice,
 });
 
 export default configureStore({

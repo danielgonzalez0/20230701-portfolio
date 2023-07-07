@@ -7,9 +7,7 @@ import KBLLogo from '../../../assets/logo/KBL.png';
 import fcaLogo from '../../../assets/logo/fca-banklogo.png';
 import { Trans, useTranslation } from 'react-i18next';
 
-
 const About = () => {
-
   const { t } = useTranslation();
   return (
     <section id="about">
@@ -20,14 +18,20 @@ const About = () => {
         </div>
         <div className="about-description">
           <Trans t={t}>
-            <p>{t('about.part1')}</p>
+            <p>
+              <span>{t('about.part1')}</span> <span>{t('about.part1Bis')}</span>
+            </p>
           </Trans>
           <Trans t={t}>
-            <p>{t('about.part2')}</p>
+            <p>
+              <span>{t('about.part2')}</span> <span>{t('about.part2Bis')}</span>
+            </p>
           </Trans>
 
           <Trans t={t}>
-            <p>{t('about.part3')}</p>
+            <p>
+              <span>{t('about.part3')}</span> <span>{t('about.part3Bis')}</span>
+            </p>
           </Trans>
 
           <Trans t={t}>

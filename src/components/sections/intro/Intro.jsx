@@ -4,6 +4,7 @@ import logo from '../../header/logo-dg-black.png';
 import logoWhite from '../../header/logo-dg-white.png';
 import { useSelector } from 'react-redux';
 import { HashLink as Link } from 'react-router-hash-link';
+// import PostBtn from '../../buttons/postBtn/PostBtn';
 
 const Intro = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ const Intro = () => {
           <span> {t('intro.description.part2')}</span>
         </h2>
       </div>
+      {/* <PostBtn/> */}
       <Link to="/#about">
         <img
           src={darkMode === 'dark' ? logoWhite : logo}
