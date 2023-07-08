@@ -36,9 +36,9 @@ const Home = () => {
   return (
     <main>
       <Intro />
-      <About />
       <Skills />
       <Work />
+      <About />
       <Contact />
     </main>
   );

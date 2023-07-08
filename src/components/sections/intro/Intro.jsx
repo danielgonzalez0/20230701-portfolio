@@ -20,7 +20,7 @@ const Intro = () => {
         </h2>
       </div>
       {/* <PostBtn/> */}
-      <Link to="/#about">
+      <Link to="/#skills">
         <img
           src={darkMode === 'dark' ? logoWhite : logo}
           alt="logo Daniel Gonzalez"

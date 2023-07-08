@@ -10,6 +10,15 @@
       border-radius: 10px;
     }
   }
+  .skills-main {
+    background: rgba($white2, 0.2);
+    .skills-main-card {
+      color: $white2;
+      span{
+        background: $turquoise;
+      }
+    }
+  }
 
   .skills-logo-container {
     img {
@@ -33,6 +42,17 @@
       padding: 20px;
       border-radius: 10px;
       font-weight: 500;
+    }
+  }
+
+    .skills-main {
+    background: rgba($grey2, 0.3);
+    .skills-main-card {
+      color: $black3;
+      span{
+        color: $white2;
+        background: $violet;
+      }
     }
   }
 
@@ -64,12 +84,48 @@
   align-items: center;
   justify-content: center;
   .skill-desc {
-    max-width: 600px;
-    font-size: 1.2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
     text-align: center;
     line-height: 32px;
     padding: 40px 0;
     margin: 0 20px;
+  }
+}
+
+.skills-main {
+  max-width: 75%;
+  padding: 30px 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.skills-main-card {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  span {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: $turquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 40px;
+  }
+  p {
+    padding: 10px 5px;
+    text-align: center;
   }
 }
 

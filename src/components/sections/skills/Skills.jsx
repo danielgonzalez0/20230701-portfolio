@@ -22,12 +22,40 @@ const Skills = () => {
   const darkMode = useSelector((state) => state.status.isDarkMode);
   const language = useSelector((state) => state.status.language);
 
-
   return (
     <section id="skills">
       <div className="skills-container">
         <h2>{t('skills.title')}</h2>
-        <p className="skill-desc">{t('skills.intro')}</p>
+        <h3 className="skill-desc">
+          <span>Besoin d&apos;un développeur Front End ?</span>
+          <span>Que puis-je faire pour vous:</span>
+        </h3>
+        <div className="skills-main">
+          <div className="skills-main-card">
+            <span className="fa-regular fa-window-maximize"></span>
+            <p>
+              Créer des applications web dynamiques avec Javascript et React
+            </p>
+          </div>
+          <div className="skills-main-card">
+            <span className="fa-solid fa-table-columns"></span>
+            <p>Mettre en place des dashboards complexes avec des graphiques</p>
+          </div>
+          <div className="skills-main-card">
+              <span className="fa-solid fa-code"></span>
+            <p>
+              Résoudre des probèmes techniques et moderniser / optimiser votre code
+            </p>
+          </div>
+          <div className="skills-main-card">
+            <span className="fa-solid fa-laptop"></span>
+            <p>Préparer des mockups pour vos clients</p>
+          </div>
+          <div className="skills-main-card">
+            <span className="fa-solid fa-gears"></span>
+            <p>Mettre en oeuvre des tests unitaires et débugger du code</p>
+          </div>
+        </div>
         <div className="skills-content">
           <div className="skills-logo-section">
             <p>{t('skills.part1')}</p>
