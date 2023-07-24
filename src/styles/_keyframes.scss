@@ -5,7 +5,7 @@
     transform: translate3d(0, 100%, 0);
   }
 
-      30%{
+  30% {
     opacity: 0;
   }
 
@@ -23,7 +23,7 @@
     transform: translate3d(0, -100%, 0);
   }
 
-  30%{
+  30% {
     opacity: 0;
   }
 
@@ -35,33 +35,61 @@
 }
 
 @keyframes revealSpan {
-
-
-  20%{
+  20% {
     opacity: 1;
-      transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
   }
 
-    80%{
+  80% {
     opacity: 1;
-      transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
   }
 
   100% {
     opacity: 0;
-     transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0);
   }
 }
 
 @keyframes animeOpen {
-
-
-  0%{
+  0% {
     opacity: 0;
   }
-  
+
   100% {
     opacity: 1;
-   
+  }
+}
+
+// aniation for the darkmode button
+@keyframes darkMode {
+  0% {
+    transform: translateX(0);
+  }
+
+  70% {
+    transform: translateX(33px);
+  }
+  85% {
+    transform: translateX(29px);
+  }
+  100% {
+    transform: translateX(33px);
+  }
+}
+
+@keyframes lightMode {
+  0% {
+    transform: translateX(33px);
+  }
+
+  70% {
+    transform: translateX(0px);
+  }
+  85% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }

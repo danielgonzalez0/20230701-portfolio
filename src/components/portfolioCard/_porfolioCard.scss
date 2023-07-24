@@ -1,6 +1,6 @@
 #light #work {
   a {
-        background: $violet;
+    background: $violet;
     border: 2px solid $violet;
     color: $white2;
     &:hover {
@@ -14,29 +14,29 @@
   }
 
   .card-tags-container {
-  li {
-    color: $black3;
-    background: darken($white2, 10);
+    li {
+      color: $black3;
+      background: darken($white2, 10);
+    }
   }
-}
 
-  .divider{
+  .divider {
     background-color: $violet;
-}
+  }
 }
 
 .card-container {
   width: 80%;
   margin: 0 auto;
-  padding:0 0 30px 0;
-
+  padding: 0 0 30px 0;
 }
 .screenshots {
   position: relative;
-  overflow: hidden;
+
+
   img {
     border-radius: 2px;
-    box-shadow: 0 5px 10px 0 rgba($black1, 0.75);
+    box-shadow: 0 0px 5px 0 rgba($black1, 0.5);
   }
 
   img:nth-child(1) {
@@ -45,14 +45,14 @@
   img:nth-child(2) {
     position: absolute;
     right: 7%;
-    bottom: 0;
+    bottom: 4.5px;
     width: 30%;
   }
   img:nth-child(3) {
     width: 12%;
     position: absolute;
     right: 1%;
-    bottom: 0;
+    bottom: 4.5px;
   }
 }
 
@@ -102,7 +102,7 @@
 }
 
 .card-tags-container {
-    margin: 40px 0;;
+  margin: 40px 0;
   li {
     display: inline-block;
     padding: 7px 7px 5px;
@@ -117,10 +117,10 @@
   }
 }
 
-.divider{
-    display: block;
-    margin: 30px 0;
-    width: 100px;
-    height: 2px;
-    background-color: $turquoise;
+.divider {
+  display: block;
+  margin: 30px 0;
+  width: 100px;
+  height: 2px;
+  background-color: $turquoise;
 }

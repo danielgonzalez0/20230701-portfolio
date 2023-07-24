@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logoWhite from './logo-dg-white.png';
 import logoBlack from './logo-dg-black.png';
-import { HashLink as Link } from 'react-router-hash-link';
 import DarkModeButton from '../buttons/darkmode/DarkModeButton';
 import { useSelector } from 'react-redux';
 import LanguageBtn from '../buttons/languageSwitch/LanguageBtn';
+import DesktopNav from './navigation/DesktopNav';
 
 const Header = () => {
   const isDarkMode = useSelector((state) => state.status.isDarkMode);
+  const mediaMatch = window.matchMedia('(max-width: 870px)');
+  const [matches, setMatches] = useState(mediaMatch.matches);
+
+  useEffect(() => {
+    const handler = (e) => {
+      setMatches(e.matches);
+    };
+    mediaMatch.addEventListener('change', handler);
+  }, []);
 
   return (
     <header>
@@ -20,25 +29,7 @@ const Header = () => {
       </div>
       <DarkModeButton />
       <LanguageBtn />
-      <nav>
-        <ul>
-          <li>
-            <Link to="/#intro">Home</Link>
-          </li>
-          <Link to="/#skills">
-            <li>Skills</li>
-          </Link>
-          <Link to="/#work">
-            <li>Work</li>
-          </Link>
-          <Link to="/#about">
-            <li>About</li>
-          </Link>
-          <Link to="/#contact">
-            <li>Contact</li>
-          </Link>
-        </ul>
-      </nav>
+      {matches ? null : <DesktopNav />}
     </header>
   );
 };

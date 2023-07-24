@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setIsDarkMode } from '../../../redux/status.slice';
 
+
 const DarkModeButton = () => {
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.status.isDarkMode);

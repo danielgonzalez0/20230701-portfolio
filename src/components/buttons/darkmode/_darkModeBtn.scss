@@ -38,7 +38,7 @@
 /* ---- ---- Light Mode ---- ---- */
 
 #light .toggle {
-  background: linear-gradient(145deg, rgba($white1, 0.8), rgba($grey1, 0.8));
+  background: linear-gradient(145deg, rgba($grey2, 0.8), rgba($white2, 0.8));
 }
 #light .icon--light {
   color: rgba($grey1, 1);
@@ -48,6 +48,7 @@
 }
 #light .ball {
   background: linear-gradient(145deg, rgba($grey2, 0.8), rgba($black3, 0.8));
+    animation: 0.3s ease-in-out forwards lightMode
 }
 /* ---- ---- Dark Mode ---- ---- */
 
@@ -62,6 +63,7 @@
 }
 #dark .ball {
   background-color: $grey1;
-  transition: 0.3s;
-  transform: translateX(33px);
+  // transition: 0.5s ease-in-out;
+  // transform: translateX(33px);
+  animation: 0.3s ease-in-out forwards darkMode
 }
