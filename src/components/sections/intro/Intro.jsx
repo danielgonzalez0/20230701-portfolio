@@ -13,7 +13,9 @@ const Intro = () => {
   return (
     <section id="intro">
       <div className="intro_wrapper">
-        <h1>{t('intro.title')}</h1>
+        <h1>
+          <span>{t('intro.title')}</span>
+        </h1>
         <h2>
           <span>{t('intro.description.part1')}</span>
           <span> {t('intro.description.part2')}</span>

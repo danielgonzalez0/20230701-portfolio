@@ -52,7 +52,7 @@ body {
   font-family: $font400;
   font-weight: 400;
   color: $grey2;
-  &:has(#black){
+  &:has(#black) {
     background: $black3;
   }
 }
@@ -70,13 +70,61 @@ a:visited {
   text-decoration: none;
 }
 
-
-
 .animeOpen {
-    -webkit-animation-name: animeOpen;
-    animation-name: animeOpen;
-        -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-name: animeOpen;
+  animation-name: animeOpen;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.tilt-in-left-1 {
+  -webkit-animation: tilt-in-left-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-left-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slit-out-vertical {
+  -webkit-animation: slit-out-vertical 0.5s ease-in both;
+  animation: slit-out-vertical 0.5s ease-in both;
+}
+//buttons & links as btn
+
+.button {
+  padding: 5px 10px;
+  background: $black3;
+  border: 2px solid $turquoise;
+  border-radius: 3px;
+  margin: 0 5px;
+  color: $turquoise;
+  font-family: $font700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus-visible {
+    border: 2px solid $turquoise;
+    background: $turquoise;
+    color: $white2;
+  }
+  &:focus-visible {
+    outline: 1px solid $turquoise;
+  }
+}
+
+#light .button {
+  background: $violet;
+  border: 2px solid $violet;
+  color: $white2;
+  &:hover,
+  &:focus-visible {
+    border: 2px solid $grey1;
+    background: $grey1;
+    color: $violet;
+  }
+  &:focus-visible {
+    outline: 1px solid $white2;
+  }
 }

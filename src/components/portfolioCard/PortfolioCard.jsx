@@ -38,11 +38,21 @@ const PortfolioCard = ({ data }) => {
         <h3>{language === 'fr' ? data.title.fr : data.title.en}</h3>
         <div className="card-btn-container">
           {data.urlDemo && (
-            <a target="_blank" rel="noreferrer" href={data.urlDemo}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={data.urlDemo}
+              className="button"
+            >
               Demo
             </a>
           )}
-          <a target="_blank" rel="noreferrer" href={data.urlCode}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={data.urlCode}
+            className="button"
+          >
             Code
           </a>
         </div>
