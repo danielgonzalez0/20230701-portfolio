@@ -1,9 +1,12 @@
 @import './settings';
+@import './keyframes';
 @import '../components/buttons/darkmode/darkModeBtn';
+@import '../components/buttons/languageSwitch/languageBtn';
 @import '../components/portfolioCard/porfolioCard';
+@import '../components/header/navigation/navigation';
 @import '../components/header/header';
 @import '../components/contactForm/contactForm';
-@import './keyframes';
+@import '../components/socialIcons/socialIcons';
 @import '../components/sections/intro/intro';
 @import '../components/sections/about/about';
 @import '../components/sections/skills/skills';

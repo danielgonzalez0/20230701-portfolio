@@ -15,10 +15,12 @@ const LanguageBtn = () => {
   };
 
   return (
-    <select onChange={handleLangChange} value={selectedLang}>
-      <option value="fr">FR</option>
-      <option value="en">EN</option>
-    </select>
+    <div className="select-container">
+      <select onChange={handleLangChange} value={selectedLang}>
+        <option value="fr">FR</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
   );
 };
 

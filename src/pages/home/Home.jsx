@@ -11,11 +11,12 @@ import { getAllProjects } from '../../redux/projects.slice';
 const Home = () => {
   const dispatch = useDispatch();
 
-  window.addEventListener('scroll', () => {
-    handleAnimationLaunch();
-  });
-
   useEffect(() => {
+    setTimeout(() => {
+      window.addEventListener('scroll', () => {
+        handleAnimationLaunch();
+      });
+    }, 1000);
     const dataFetch = async () => {
       await fetch(
         'https://portfolio-a97f1-default-rtdb.europe-west1.firebasedatabase.app/projects/data.json'

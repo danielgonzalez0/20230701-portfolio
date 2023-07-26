@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const form = useRef();
@@ -8,50 +8,42 @@ const ContactForm = () => {
     e.preventDefault();
     const formMess = document.querySelector('.formMessage');
 
-    console.log(formMess);
-
-    form.current.reset();
-    formMess.innerHTML = `<p class="success tilt-in-left-1">Message envoyé !</p>`;
-    setTimeout(() => {
-      formMess.innerHTML = `<p class="success slit-out-vertical">Message envoyé !</p>`;
-    }, 2000);
-    setTimeout(() => {
-      formMess.innerHTML = '';
-    }, 2500);
-
-    // emailjs
-    //   .sendForm(
-    //     process.env.REACT_APP_EMAILJS_SERVICEID,
-    //     process.env.REACT_APP_EMAILJS_TEMPLATEID,
-    //     form.current,
-    //     process.env.REACT_APP_EMAIJS_ID
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.txt);
-    //       form.current.reset();
-    //       formMess.innerHTML = `<p class="success tilt-in-left-1">Message envoyé !</p>`;
-    //       setTimeout(() => {
-    //         formMess.classList.replace('tilt-in-left-1', 'slit-out-vertical');
-    //       }, 2000);
-    //       setTimeout(() => {
-    //         formMess.innerHTML = '';
-    //       }, 2500);
-    //     },
-    //     (error) => {
-    //       console.log(error);
-    //       formMess.innerHTML = `<p class="error">Une erreur s'est produite, veuillez réessayer</p>`;
-    //       setTimeout(() => {
-    //         formMess.innerHTML = '';
-    //       }, 2500);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICEID,
+        process.env.REACT_APP_EMAILJS_TEMPLATEID,
+        form.current,
+        process.env.REACT_APP_EMAIJS_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.txt);
+          form.current.reset();
+          formMess.innerHTML = `<p class="success tilt-in-left-1">Message envoyé !</p>`;
+          setTimeout(() => {
+            formMess.innerHTML = `<p class="success slit-out-vertical">Message envoyé !</p>`;
+          }, 2000);
+          setTimeout(() => {
+            formMess.innerHTML = '';
+          }, 2500);
+        },
+        (error) => {
+          console.log(error);
+          formMess.innerHTML = `<p class="success tilt-in-left-1">Une erreur s'est produite, veuillez réessayer</p>`;
+          setTimeout(() => {
+            formMess.innerHTML = `<p class="success slit-out-vertical">Une erreur s'est produite, veuillez réessayer</p>`;
+          }, 2000);
+          setTimeout(() => {
+            formMess.innerHTML = '';
+          }, 2500);
+        }
+      );
   };
 
   return (
     <div className="form-container">
       <h2>Contact</h2>
-      <p className='contact-description'>
+      <p className="contact-description">
         <span>
           Vous avez un projet en tête ou vous voulez simplement me dire bonjour
           ?

@@ -1,0 +1,29 @@
+#light .social-network {
+  a {
+    transition: 0.7s ease-in-out;
+     color:$grey2;
+    &:hover {
+      color: $violet;
+    }
+  }
+}
+
+.social-network {
+  min-width: 200px;
+  max-width: 250px;
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  a {
+    transition: 0.7s ease-in-out;
+    &:hover {
+      color: $turquoise;
+    }
+  }
+  i {
+    font-size: 2rem;
+  }
+}

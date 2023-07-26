@@ -12,10 +12,12 @@ const Work = () => {
     <>
       {portfolioArray.length > 0 && (
         <section id="work">
-          <h2>{t('work.title')}</h2>
-          {portfolioArray.map((project) => (
-            <PortfolioCard data={project} key={project.id} />
-          ))}
+          <div className="work-container">
+            <h2>{t('work.title')}</h2>
+            {portfolioArray.map((project) => (
+              <PortfolioCard data={project} key={project.id} />
+            ))}
+          </div>
         </section>
       )}
     </>

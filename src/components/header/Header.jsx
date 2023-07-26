@@ -5,6 +5,7 @@ import DarkModeButton from '../buttons/darkmode/DarkModeButton';
 import { useSelector } from 'react-redux';
 import LanguageBtn from '../buttons/languageSwitch/LanguageBtn';
 import DesktopNav from './navigation/DesktopNav';
+import NavMobile from './navigation/NavMobile';
 
 const Header = () => {
   const isDarkMode = useSelector((state) => state.status.isDarkMode);
@@ -29,7 +30,8 @@ const Header = () => {
       </div>
       <DarkModeButton />
       <LanguageBtn />
-      {matches ? null : <DesktopNav />}
+
+      {matches ? <NavMobile /> : <DesktopNav />}
     </header>
   );
 };

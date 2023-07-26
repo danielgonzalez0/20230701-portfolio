@@ -5,6 +5,7 @@ export const statusSlice = createSlice({
   initialState: {
     isDarkMode: 'dark',
     language: 'en',
+    isMenuOpen: true,
   },
   reducers: {
     setIsDarkMode: (state, action) => {
@@ -13,9 +14,12 @@ export const statusSlice = createSlice({
     setLanguage: (state, action) => {
       return (state = { ...state, language: action.payload });
     },
+    setMenuIsOpen: (state, action) => {
+      return (state = { ...state, isMenuOpen: action.payload });
+    },
   },
 });
 
-export const { setIsDarkMode, setLanguage } = statusSlice.actions;
+export const { setIsDarkMode, setLanguage, setMenuIsOpen} = statusSlice.actions;
 
 export default statusSlice.reducer;
