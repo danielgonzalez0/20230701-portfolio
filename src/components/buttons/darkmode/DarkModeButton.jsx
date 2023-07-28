@@ -23,8 +23,6 @@ const DarkModeButton = () => {
       <label className="toggle" htmlFor="toggle">
         <span className="fa-regular fa-sun icon icon--light"></span>
         <span className="fa-regular fa-moon icon icon--dark"></span>
-        {/* <ion-icon className="icon icon--light" name="sunny-outline"></ion-icon> */}
-        {/* <ion-icon className="icon icon--dark" name="moon-outline"></ion-icon> */}
         <span className="ball"></span>
       </label>
     </>

@@ -1,37 +1,111 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const PortfolioCard = ({ data }) => {
   const language = useSelector((state) => state.status.language);
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+  // const [topPos, setTopPos] = useState(0);
+  const refThree = useRef(null);
+  // useLayoutEffect(() => {
+  //   setTimeout(() => {
+  //     window.addEventListener('scroll', () => {
+  //       setTopPos(refThree.current.getBoundingClientRect().top);
+  //     });
+  //   }, 1000);
+  // }, []);
 
+   useEffect(() => {
+     if (inView) {
+       control.start('visible');
+     } else {
+       control.start('initial');
+     }
+   }, [control, inView]);
+
+  const imgAnim = {
+    initial: {
+      opacity: 0,
+      x: Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1),
+      y: Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1),
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+    },
+  };
+
+  const imgAnim2 = {
+    initial: {
+      opacity: 0,
+      x: Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1),
+      y: Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1),
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+    },
+  };
+
+  const imgAnim3 = {
+    initial: {
+      opacity: 0,
+      x: Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1),
+      y: Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1),
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+    },
+  };
 
   return (
-    <div className="card-container">
+    <div className="card-container" ref={refThree}>
+      {/* {topPos < 800 ? (
+        <> */}
       <div className="screenshots">
-        <img
+        <motion.img
           src={data.cover.desktop}
           alt={
             language === 'fr'
               ? `${data.title.fr} version desktop`
               : `${data.title.en} version desktop`
           }
+          ref={ref}
+          initial="initial"
+          animate={control}
+          variants={imgAnim}
+          transition={{ duration: 1.2 }}
         />
-        <img
+        <motion.img
           src={data.cover.tablet}
           alt={
             language === 'fr'
               ? `${data.title.fr} version tablet`
               : `${data.title.en} version tablet`
           }
+          initial="initial"
+          animate={control}
+          variants={imgAnim2}
+          transition={{ duration: 1.2 }}
         />
-        <img
+        <motion.img
           src={data.cover.mobile}
           alt={
             language === 'fr'
               ? `${data.title.fr} version mobile`
               : `${data.title.en} version mobile`
           }
+          initial="initial"
+          animate={control}
+          variants={imgAnim3}
+          transition={{ duration: 1.2 }}
         />
       </div>
       <div className="card-title">
@@ -68,6 +142,8 @@ const PortfolioCard = ({ data }) => {
         </ul>
       </div>
       <span className="divider"></span>
+      {/* </>
+      ) : null} */}
     </div>
   );
 };

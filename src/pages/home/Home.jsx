@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import Intro from '../../components/sections/intro/Intro';
 import About from '../../components/sections/about/About';
 import Skills from '../../components/sections/skills/Skills';
@@ -10,13 +10,14 @@ import { getAllProjects } from '../../redux/projects.slice';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const refThree = useRef(null);
 
-  useEffect(() => {
-    setTimeout(() => {
+  useLayoutEffect(() => {
+    // setTimeout(() => {
       window.addEventListener('scroll', () => {
-        handleAnimationLaunch();
+        handleAnimationLaunch(refThree.current);
       });
-    }, 1000);
+    // }, 1);
     const dataFetch = async () => {
       await fetch(
         'https://portfolio-a97f1-default-rtdb.europe-west1.firebasedatabase.app/projects/data.json'
@@ -37,10 +38,12 @@ const Home = () => {
   return (
     <main>
       <Intro />
-      <Skills />
-      <Work />
-      <About />
-      <Contact />
+      <div ref={refThree}>
+        <Skills />
+        <Work />
+        <About />
+        <Contact />
+      </div>
     </main>
   );
 };

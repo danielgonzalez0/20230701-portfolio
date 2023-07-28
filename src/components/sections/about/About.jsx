@@ -11,77 +11,82 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <section id="about">
-      <div className="wrapper">
-        <h2>{t('about.title')}</h2>
-        <div className="about-profil">
-          <img src={profilImg} alt="potrait" />
-        </div>
-        <div className="about-description">
-          <Trans t={t}>
-            <p>
-              <span>{t('about.part1')}</span> <span>{t('about.part1Bis')}</span>
-            </p>
-          </Trans>
-          <Trans t={t}>
-            <p>
-              <span>{t('about.part2')}</span> <span>{t('about.part2Bis')}</span>
-            </p>
-          </Trans>
+      <div className="about-container">
+        <div className="wrapper">
+          <h2>{t('about.title')}</h2>
+          <div className="about-profil">
+            <img src={profilImg} alt="potrait" />
+          </div>
+          <div className="about-description">
+            <Trans t={t}>
+              <p>
+                <span>{t('about.part1')}</span>{' '}
+                <span>{t('about.part1Bis')}</span>
+              </p>
+            </Trans>
+            <Trans t={t}>
+              <p>
+                <span>{t('about.part2')}</span>{' '}
+                <span>{t('about.part2Bis')}</span>
+              </p>
+            </Trans>
 
-          <Trans t={t}>
-            <p>
-              <span>{t('about.part3')}</span> <span>{t('about.part3Bis')}</span>
-            </p>
-          </Trans>
+            <Trans t={t}>
+              <p>
+                <span>{t('about.part3')}</span>{' '}
+                <span>{t('about.part3Bis')}</span>
+              </p>
+            </Trans>
 
-          <Trans t={t}>
-            <p>{t('about.part4')}</p>
-          </Trans>
-        </div>
-        <div className="about-soft">
-          <p>{t('about.part5')}</p>
-          <div className="about-soft-content">
-            <div className="about-soft-card">
-              <span className="fa-solid fa-magnifying-glass"></span>
-              <p>{t('about.part6')}</p>
-            </div>
+            <Trans t={t}>
+              <p>{t('about.part4')}</p>
+            </Trans>
+          </div>
+          <div className="about-soft">
+            <p>{t('about.part5')}</p>
+            <div className="about-soft-content">
+              <div className="about-soft-card">
+                <span className="fa-solid fa-magnifying-glass"></span>
+                <p>{t('about.part6')}</p>
+              </div>
 
-            <div className="about-soft-card">
-              <span className="fa-solid fa-user-group"></span>
-              <p>{t('about.part7')}</p>
-            </div>
-            <div className="about-soft-card">
-              <span className="fa-solid fa-list-check"></span>
-              <p>{t('about.part8')}</p>
-            </div>
-            <div className="about-soft-card">
-              <span className="fa-regular fa-clock"></span>
-              <p>{t('about.part9')}</p>
+              <div className="about-soft-card">
+                <span className="fa-solid fa-user-group"></span>
+                <p>{t('about.part7')}</p>
+              </div>
+              <div className="about-soft-card">
+                <span className="fa-solid fa-list-check"></span>
+                <p>{t('about.part8')}</p>
+              </div>
+              <div className="about-soft-card">
+                <span className="fa-regular fa-clock"></span>
+                <p>{t('about.part9')}</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="about-work">
-          <p>{t('about.part10')}</p>
-          <div className="about-work-content">
-            <div className="about-logo-container">
-              <ul>
-                <li>
-                  <img className="bg" src={fcaLogo} alt="fca logo" />
-                </li>
-                <li>
-                  <img src={alphabetLogo} alt="Alphabet logo" />
-                </li>
-                <li>
-                  <img className="bg" src={KBLLogo} alt="KBL logo" />
-                </li>
-                <li>
-                  <img className="bg" src={SGLogo} alt="SG logo" />
-                </li>
-                <li>
-                  <img className="bg" src={gaumontLogo} alt="Gaumont logo" />
-                </li>
-              </ul>
+          <div className="about-work">
+            <p>{t('about.part10')}</p>
+            <div className="about-work-content">
+              <div className="about-logo-container">
+                <ul>
+                  <li>
+                    <img className="bg" src={fcaLogo} alt="fca logo" />
+                  </li>
+                  <li>
+                    <img src={alphabetLogo} alt="Alphabet logo" />
+                  </li>
+                  <li>
+                    <img className="bg" src={KBLLogo} alt="KBL logo" />
+                  </li>
+                  <li>
+                    <img className="bg" src={SGLogo} alt="SG logo" />
+                  </li>
+                  <li>
+                    <img className="bg" src={gaumontLogo} alt="Gaumont logo" />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

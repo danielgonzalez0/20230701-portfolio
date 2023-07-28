@@ -9,7 +9,6 @@ const LanguageBtn = () => {
   const selectedLang = useSelector((state) => state.status.language);
 
   const handleLangChange = (e) => {
-    console.log(e.target.value);
     dispatch(setLanguage(e.target.value));
     i18n.changeLanguage(e.target.value);
   };

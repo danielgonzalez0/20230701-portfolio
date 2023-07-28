@@ -6,8 +6,9 @@ import { useSelector } from 'react-redux';
 
 const Work = () => {
   const portfolioArray = useSelector((state) => state.projects);
-  console.log(portfolioArray);
   const { t } = useTranslation();
+  console.log(portfolioArray);
+
   return (
     <>
       {portfolioArray.length > 0 && (

@@ -1,54 +1,14 @@
-const handleAnimationLaunch = () => {
-  const header = document.getElementsByTagName('header')[0];
-  const intro = document.getElementById('intro');
-  const about = document.getElementById('about');
-  const skill = document.getElementById('skills');
-  const work = document.getElementById('work');
-  const skillContainer = document.querySelector('.skills-container');
-  const workContainer = document.querySelector('.work-container');
+const handleAnimationLaunch = (element) => {
+  const collection = element.children;
 
-  if (
-    window.scrollY + window.innerHeight - 200 >=
-    header.offsetHeight + intro.offsetHeight
-  ) {
-    skillContainer.classList.add('animeOpen');
-  } else {
-    if (skillContainer.classList.contains('animeOpen'))
-      skillContainer.classList.remove('animeOpen');
-  }
-
-  if (
-    window.scrollY + window.innerHeight - 200 >=
-    header.offsetHeight + intro.offsetHeight + skill.offsetHeight
-  ) {
-    workContainer.classList.add('animeOpen');
-  } else {
-    if (workContainer.classList)
-      workContainer.classList.remove('animeOpen');
-  }
-
-  if (
-    window.scrollY + window.innerHeight >=
-    header.offsetHeight +
-      intro.offsetHeight +
-      skill.offsetHeight +
-      about.offsetHeight
-  ) {
-    document.querySelector('.wrapper').classList.add('animeOpen');
-  } else {
-    document.querySelector('.wrapper').classList.remove('animeOpen');
-  }
-  if (
-    window.scrollY + window.innerHeight >=
-    header.offsetHeight +
-      intro.offsetHeight +
-      skill.offsetHeight +
-      about.offsetHeight +
-      work.offsetHeight
-  ) {
-    document.querySelector('.form-container').classList.add('animeOpen');
-  } else {
-    document.querySelector('.form-container').classList.remove('animeOpen');
+  for (let i = 0; i < collection.length; i++) {
+    let topPos = collection[i].getBoundingClientRect().top;
+    if (topPos < 800) {
+      if (!collection[i].classList.contains('animeOpen'))
+        collection[i].firstChild.classList.add('animeOpen');
+    } else {
+        collection[i].firstChild.classList.remove('animeOpen');
+    }
   }
 };
 

@@ -36,8 +36,11 @@
     font-size: 1.2rem;
   }
 
-  .wrapper {
+  .about-container {
+    width: 100%;
     opacity: 0;
+  }
+  .wrapper {
     margin: 60px auto 120px;
     flex-direction: column;
     align-items: center;
