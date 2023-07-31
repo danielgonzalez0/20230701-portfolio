@@ -1,7 +1,7 @@
 #light .social-network {
   a {
     transition: 0.7s ease-in-out;
-     color:$grey2;
+    color: $grey2;
     &:hover {
       color: $violet;
     }
@@ -25,5 +25,39 @@
   }
   i {
     font-size: 2rem;
+  }
+}
+
+#dark header .social-network {
+  a {
+    transition: 0.7s ease-in-out;
+    &:hover {
+      color: $turquoise;
+    }
+  }
+}
+
+
+header .social-network {
+  position: absolute;
+  right: 5px;
+  min-width: 50px;
+  padding-right: 15px;
+  .content {
+    a {
+      &:hover {
+        color: $turquoise;
+      }
+    }
+  }
+}
+
+#light header .social-network {
+  .content {
+    a {
+      &:hover {
+        color: $violet;
+      }
+    }
   }
 }

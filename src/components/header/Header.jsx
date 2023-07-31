@@ -30,8 +30,29 @@ const Header = () => {
       </div>
       <DarkModeButton />
       <LanguageBtn />
-
       {matches ? <NavMobile /> : <DesktopNav />}
+      <div className="social-network header-network">
+        <ul className="content">
+          <a
+            href="https://www.linkedin.com/in/danielgonzalez1980/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li>
+              <i className="fa-brands fa-linkedin"></i>
+            </li>
+          </a>
+          <a
+            href="https://github.com/danielgonzalez0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li>
+              <i className="fa-brands fa-github"></i>
+            </li>
+          </a>
+        </ul>
+      </div>
     </header>
   );
 };

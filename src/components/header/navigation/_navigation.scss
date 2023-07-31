@@ -1,7 +1,7 @@
 .toggle-btn {
   position: fixed;
   top: 13px;
-  right: 15px;
+  right: 100px;
   cursor: pointer;
   height: 45px;
   width: 45px;
@@ -9,7 +9,7 @@
 }
 
 .toggle-btn span {
-  width: 40px;
+  width: 45px;
   height: 5px;
   border-radius: 5px;
   background: $white2;
@@ -40,6 +40,15 @@
       background-color: $turquoise;
     }
   }
+  .menu {
+    position: absolute;
+    font-size: 0.8rem;
+    min-width: 45px;
+    right: 100px;
+    bottom: 3px;
+    text-align: center;
+  
+  }
 }
 
 /* code ajouté */
@@ -68,7 +77,7 @@
   }
 }
 #sidebar.hidden {
-  top: 70px !important;
+  top: 75px !important;
   z-index: 4;
 }
 
@@ -76,7 +85,7 @@
   .toggle-btn span {
     background: $grey2;
   }
-  ul{
+  ul {
     background: $white2;
   }
   li:hover {

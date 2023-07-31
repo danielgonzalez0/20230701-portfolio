@@ -11,38 +11,26 @@ const DesktopNav = () => {
   };
   return (
     <nav>
-      <ul>
-        <Link
-          to="/#intro"
-          aria-hidden={menuIsOpen ? false : true}
-          onClick={handleClick}
-        >
+      <ul aria-hidden={menuIsOpen ? true : false}>
+        <Link to="/#intro" tabIndex={menuIsOpen ? -1 : 0} onClick={handleClick}>
           <li>Home</li>
         </Link>
         <Link
           to="/#skills"
-          aria-hidden={menuIsOpen ? false : true}
+          tabIndex={menuIsOpen ? -1 : 0}
           onClick={handleClick}
         >
           <li>Skills</li>
         </Link>
-        <Link
-          to="/#work"
-          aria-hidden={menuIsOpen ? false : true}
-          onClick={handleClick}
-        >
+        <Link to="/#work" tabIndex={menuIsOpen ? -1 : 0} onClick={handleClick}>
           <li>Work</li>
         </Link>
-        <Link
-          to="/#about"
-          aria-hidden={menuIsOpen ? false : true}
-          onClick={handleClick}
-        >
+        <Link to="/#about" tabIndex={menuIsOpen ? -1 : 0} onClick={handleClick}>
           <li>About</li>
         </Link>
         <Link
           to="/#contact"
-          aria-hidden={menuIsOpen ? false : true}
+          tabIndex={menuIsOpen ? -1 : 0}
           onClick={handleClick}
         >
           <li>Contact</li>

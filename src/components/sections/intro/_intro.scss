@@ -87,7 +87,7 @@ a {
     animation-fill-mode: forwards;
     display: flex;
     align-items: flex-end;
-    span{
+    span {
       display: block;
     }
   }
@@ -115,6 +115,10 @@ a {
     bottom: 50px;
     width: 60px;
     text-align: center;
+    animation: wobbleAnim 2s ease 0.5s infinite normal forwards;
+    &:hover:has(.logoAnim) {
+      animation: none;
+    }
     img {
       position: relative;
       z-index: 2;
@@ -128,6 +132,10 @@ a {
       &:hover ~ .chevron {
         opacity: 1;
       }
+    }
+
+    .logoAnim {
+      font-size: 1rem;
     }
 
     .chevron {

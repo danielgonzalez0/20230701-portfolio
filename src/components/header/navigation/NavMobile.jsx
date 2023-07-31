@@ -13,7 +13,6 @@ const NavMobile = () => {
       const sidebar = document.getElementById('sidebar');
       if (sidebar && menuIsOpen) sidebar.style.top = `${header.offsetHeight}px`;
       if (!menuIsOpen) sidebar.style.top = `-800px`;
-    //   if (sidebar && !menuIsOpen) sidebar.style.top = ``;
     });
   }, []);
   return (
@@ -29,6 +28,7 @@ const NavMobile = () => {
         <span id="middlecrossbar"></span>
         <span id="lastcrossbar"></span>
       </div>
+        <p className='menu'>{menuIsOpen?"menu":"fermer"}</p>
       <DesktopNav />
     </div>
   );

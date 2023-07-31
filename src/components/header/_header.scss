@@ -4,6 +4,20 @@
   a {
     color: $grey2;
   }
+  nav {
+    ul {
+      li {
+        &:hover {
+          color: $violet;
+          transform: scale(1.2);
+        }
+        &:active {
+          color: $violet;
+          transform: scale(1.4);
+        }
+      }
+    }
+  }
 }
 #dark header {
   background-color: $black2;
@@ -17,7 +31,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 10;
-  min-height: 70px;
+  min-height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,19 +63,44 @@ header {
       align-items: center;
       justify-content: center;
       padding: 20px 10px;
+      padding-right: 100px;
       li {
         padding: 15px;
+        &:hover {
+          color: $turquoise;
+          transform: scale(1.2);
+        }
+        &:active {
+          color: $turquoise;
+          transform: scale(1.4);
+        }
       }
     }
   }
 }
 
-//media queries
-// @media screen and (max-width: 870px) {
-//   header {
-//     select {
-//       position: absolute;
-//       left: 200px;
-//     }
-//   }
-// }
+// media queries
+@media screen and (max-width: 870px) {
+  header {
+    .logo {
+      p {
+        display: none;
+      }
+    }
+    .select-container {
+      position: absolute;
+      left: 60px;
+    }
+     nav {
+    ul {
+      li {
+        padding: 15px;
+        &:hover,&:active {
+          color: $white2;
+          transform: none;
+        }
+      }
+    }
+}
+  }
+}

@@ -23,6 +23,15 @@ select::-ms-expand {
   height: 35px;
   border-radius: 0.25em;
   overflow: hidden;
+  img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40%;
+    z-index: 2;
+    width: 18%;
+    height: auto;
+  }
 }
 /* Arrow */
 .select-container::after {
@@ -30,7 +39,7 @@ select::-ms-expand {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 8px 15px;
+  padding: 6px 15px 8px;
   transition: 0.25s all ease;
   pointer-events: none;
 }

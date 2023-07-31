@@ -7,6 +7,7 @@ import Contact from '../../components/sections/contact/Contact';
 import handleAnimationLaunch from '../../utils/handleAnimationLaunch';
 import { useDispatch } from 'react-redux';
 import { getAllProjects } from '../../redux/projects.slice';
+import ContactBtn from '../../components/buttons/contactBtn/ContactBtn';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -44,6 +45,7 @@ const Home = () => {
         <About />
         <Contact />
       </div>
+    <ContactBtn/>
     </main>
   );
 };

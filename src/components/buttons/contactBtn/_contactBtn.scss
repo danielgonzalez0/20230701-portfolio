@@ -1,0 +1,38 @@
+#light .contactBtn {
+  background: $violet;
+  border: solid 2px $violet;
+  &:hover {
+    background: $white2;
+    span {
+      color: $violet;
+    }
+  }
+}
+
+.contactBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  height: 60px;
+  width: 60px;
+  background: $turquoise;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  transition: 0.7s ease-in-out;
+   border: solid 2px $turquoise;
+  &:hover {
+    background: $white2;
+      border: solid 2px $white2;
+    span {
+      color: $turquoise;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+}
