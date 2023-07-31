@@ -48,6 +48,12 @@
     max-width: 650px;
     text-align: center;
   }
+    //media queries
+  @media screen and (max-width: 700px) {
+    .about-description {
+      padding: 0 15px;
+    }
+  }
 }
 h2 {
   text-transform: uppercase;

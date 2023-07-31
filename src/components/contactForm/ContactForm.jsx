@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
   const form = useRef();
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,9 +21,9 @@ const ContactForm = () => {
         (result) => {
           console.log(result.txt);
           form.current.reset();
-          formMess.innerHTML = `<p class="success tilt-in-left-1">Message envoyé !</p>`;
+          formMess.innerHTML = `${t('contact.confirmation.success.part1')}`;
           setTimeout(() => {
-            formMess.innerHTML = `<p class="success slit-out-vertical">Message envoyé !</p>`;
+            formMess.innerHTML = `${t('contact.confirmation.success.part2')}`;
           }, 2000);
           setTimeout(() => {
             formMess.innerHTML = '';
@@ -29,9 +31,9 @@ const ContactForm = () => {
         },
         (error) => {
           console.log(error);
-          formMess.innerHTML = `<p class="success tilt-in-left-1">Une erreur s'est produite, veuillez réessayer</p>`;
+          formMess.innerHTML = `${t('contact.confirmation.error.part1')}`;
           setTimeout(() => {
-            formMess.innerHTML = `<p class="success slit-out-vertical">Une erreur s'est produite, veuillez réessayer</p>`;
+            formMess.innerHTML = `${t('contact.confirmation.success.part2')}`;
           }, 2000);
           setTimeout(() => {
             formMess.innerHTML = '';
@@ -42,50 +44,47 @@ const ContactForm = () => {
 
   return (
     <div className="form-container">
-      <h2>Contact</h2>
+      <h2>{t('contact.title')}</h2>
       <p className="contact-description">
-        <span>
-          Vous avez un projet en tête ou vous voulez simplement me dire bonjour
-          ?
-        </span>
-        <span>N&apos;hésitez pas à m&apos;envoyer un message !</span>
+        <span>{t('contact.description.part1')}</span>
+        <span>{t('contact.description.part2')}</span>
       </p>
       <form className="form-content" ref={form} onSubmit={sendEmail}>
         <div className="formMessage"></div>
         <div className="form-input-container">
-          <label>Nom</label>
+          <label>{t('contact.form-name.label')}</label>
           <input
             type="text"
             name="name"
             required
             autoComplete="off"
             id="name"
-            placeholder="Indiquez votre nom"
+            placeholder={t('contact.form-name.input')}
           />
         </div>
         <div className="form-input-container">
-          <label>Email</label>
+          <label>{t('contact.form-email.label')}</label>
           <input
             type="email"
             name="email"
             required
             autoComplete="off"
             id="email"
-            placeholder="Sur quel adresse dois-je vous répondre?"
+            placeholder={t('contact.form-email.input')}
           />
         </div>
         <div className="form-input-container">
-          <label>Message</label>
+          <label>{t('contact.form-message.label')}</label>
           <textarea
             name="message"
             id="mess"
             cols={30}
             rows={10}
-            placeholder="Entrez votre message"
+            placeholder={t('contact.form-message.input')}
             required
           />
         </div>
-        <input type="submit" value="Envoyer" className="button" />
+        <input type="submit" value={t('contact.send')} className="button" />
       </form>
     </div>
   );

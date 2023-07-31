@@ -24,10 +24,51 @@
   },
   "skills": {
     "title": "Skills",
+    "description": {
+      "part1": "Need a Front End developer?",
+      "part2": "What can I do for you:"
+    },
+    "skills": {
+      "part1": "Creating dynamic web applications with Javascript and React",
+      "part2": "Setting up complex dashboards with graphs",
+      "part3": "Resolving technical issues and modernizing/optimizing your code",
+      "part4": "Preparing mockups for your clients",
+      "part5": "Implementing unit tests and debugging code"
+    },
     "intro": "I've been learning web development for about 2 years now, and I'm always eager to learn more in this fast paced industry.",
     "part1": "Some technologies I've worked with:"
   },
   "work": {
     "title": "Some of My Work"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": {
+      "part1": "Do you have a project in mind or just want to say hello?",
+      "part2": "Feel free to send me a message!"
+    },
+    "form-name": {
+      "label": "Name",
+      "input": "Enter your name"
+    },
+    "form-email": {
+      "label": "Email",
+      "input": "Enter your email address"
+    },
+    "form-message": {
+      "label": "Message",
+      "input": "Enter your message"
+    },
+    "send": "Send",
+    "confirmation": {
+      "success": {
+        "part1": "<p class='success tilt-in-left-1'>Message sent successfully!</p>",
+        "part2": "<p class='success slit-out-vertical'>Message sent successfully!</p>"
+      },
+      "error": {
+        "part1": "<p class='error tilt-in-left-1'>An error occurred, please try again.</p>",
+        "part2": "<p class='success slit-out-vertical'>An error occurred, please try again.</p>"
+      }
+    }
   }
 }

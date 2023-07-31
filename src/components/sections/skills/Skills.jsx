@@ -27,33 +27,29 @@ const Skills = () => {
       <div className="skills-container">
         <h2>{t('skills.title')}</h2>
         <h3 className="skill-desc">
-          <span>Besoin d&apos;un développeur Front End ?</span>
-          <span>Que puis-je faire pour vous:</span>
+          <span>{t('skills.description.part1')}</span>
+          <span>{t('skills.description.part2')}</span>
         </h3>
         <div className="skills-main">
           <div className="skills-main-card">
             <span className="fa-regular fa-window-maximize"></span>
-            <p>
-              Créer des applications web dynamiques avec Javascript et React
-            </p>
+            <p>{t('skills.skills.part1')}</p>
           </div>
           <div className="skills-main-card">
             <span className="fa-solid fa-table-columns"></span>
-            <p>Mettre en place des dashboards complexes avec des graphiques</p>
+            <p>{t('skills.skills.part2')}</p>
           </div>
           <div className="skills-main-card">
-              <span className="fa-solid fa-code"></span>
-            <p>
-              Résoudre des probèmes techniques et moderniser / optimiser votre code
-            </p>
+            <span className="fa-solid fa-code"></span>
+            <p>{t('skills.skills.part3')}</p>
           </div>
           <div className="skills-main-card">
             <span className="fa-solid fa-laptop"></span>
-            <p>Préparer des mockups pour vos clients</p>
+            <p>{t('skills.skills.part4')}</p>
           </div>
           <div className="skills-main-card">
             <span className="fa-solid fa-gears"></span>
-            <p>Mettre en oeuvre des tests unitaires et débugger du code</p>
+            <p>{t('skills.skills.part5')}</p>
           </div>
         </div>
         <div className="skills-content">
