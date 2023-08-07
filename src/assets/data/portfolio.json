@@ -1,52 +1,48 @@
 [
   {
     "id": 1,
-    "project": "kasa",
+    "project": "HRnet",
     "title": {
-      "en": "Kasa",
-      "fr": "Kasa"
+      "en": "HRnet",
+      "fr": "HRnet"
     },
     "cover": {
-      "desktop": "https://i.imgur.com/8SwCfTX.png",
-      "tablet": "https://i.imgur.com/8cLZ6sc.png",
-      "mobile": "https://i.imgur.com/qG7mqWp.png"
+      "desktop": "https://i.imgur.com/i2eq0VE.png",
+      "tablet": "https://i.imgur.com/LbSwN0L.png",
+      "mobile": "https://i.imgur.com/JOBRvbP.png"
     },
     "pictures": [
-      "https://i.imgur.com/oE6i6AV.png",
-      "https://i.imgur.com/jZCzprJ.png",
-      "https://i.imgur.com/QHdEzpQ.png",
-      "https://i.imgur.com/HPYZv6y.png",
-      "https://i.imgur.com/4oyYyp2.png"
+      "https://i.imgur.com/i2eq0VE.png",
+      "https://i.imgur.com/dJP1Pok.png",
+      "https://i.imgur.com/wHWQfF1.png",
+      "https://i.imgur.com/Fkh7ljZ.png"
     ],
     "description": {
-      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the main goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines were required for image galleries, dropdown buttons. For the global structure of the application, we have to use logical structure, 1 composent per file, props and states,...",
-      "fr": "Le projet fait partie d'une formation Openclassrooms spécialisée dans le développement front-end avec React. L'objectif était de développer une application web avec React et React Router. Une maquette figma et des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
+      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the main goal was to switch a jQuery library to React. Specifications was to make a new version of the 'Create Employee' and 'Employee List' pages with React, add a state management system, ensure that everything is consistent in terms of style",
+      "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif principal était de passer d'une bibliothèque jQuery à React. Les spécifications consistaient à créer une nouvelle version des pages 'Create Employee' et 'Employee List' avec React, à ajouter un système de gestion d'état, et à veiller à ce que tout soit cohérent en termes de style."
     },
     "features": {
       "en": [
         "react router",
         "functional components",
-        "burger menu for navivation",
-        "carrousel for image galleries",
-        "keyboard navigation for image galleries",
-        "dropdown button",
+        "use redux toolkit to create a global state manager",
+        "complexe table and form implementation",
         "responsive design",
-        "errors handling for url"
+        "documentation with JSDoc and proptypes"
       ],
       "fr": [
         "react router",
         "composants fonctionnels",
-        "burger menu pour la navigation",
-        "carrousel pour les galeries d'images",
-        "navigation au clavier pour les galeries d'images",
-        "bouton déroulant",
+        "utiliser Redux Toolkit pour créer un gestionnaire d'état global",
+        "mise en place de tableaux et de formulaires complexes",
         "responsive design",
-        "gestion des erreurs pour les urls"
+        "documentation avec JSDoc et proptypes"
       ]
     },
     "keywords": [
       "react-application",
-      "sites-vitrines"
+      "dashboard",
+      "formulaires"
     ],
     "tags": {
       "en": [
@@ -55,7 +51,9 @@
         "javascript",
         "sass",
         "prop-types",
-        "accessibility"
+        "redux-toolkit",
+        "react-table",
+        "react-hook-form"
       ],
       "fr": [
         "react",
@@ -63,11 +61,13 @@
         "javascript",
         "sass",
         "prop-types",
-        "accessibilité"
+        "redux-toolkit",
+        "react-table",
+        "react-hook-form"
       ]
     },
-    "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
-    "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
+    "urlCode": "https://github.com/danielgonzalez0/P14-OC-20230612-HRnet",
+    "urlDemo": "https://p14-oc-20230612-h-rnet.vercel.app/"
   },
   {
     "id": 3,

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import SocialIcons from '../socialIcons/SocialIcons';
 
 const Footer = () => {
   const [isPhoneVisible, setIsPhoneVisible] = useState(false);
+  const selectedLang = useSelector((state) => state.status.language);
   const handleClick = () => {
     setIsPhoneVisible(!isPhoneVisible);
   };
@@ -18,7 +20,8 @@ const Footer = () => {
                 <p>06.60.29.91.14</p>
               ) : (
                 <button className="btnPhone">
-                  Afficher <span className="fa-solid fa-phone"></span>
+                  {selectedLang === 'fr' ? 'Afficher' : 'Display'}{' '}
+                  <span className="fa-solid fa-phone"></span>
                 </button>
               )}
             </div>

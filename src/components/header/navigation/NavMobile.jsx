@@ -5,6 +5,7 @@ import { setMenuIsOpen } from '../../../redux/status.slice';
 
 const NavMobile = () => {
   const menuIsOpen = useSelector((state) => state.status.isMenuOpen);
+  const selectedLang = useSelector((state) => state.status.language);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -28,7 +29,9 @@ const NavMobile = () => {
         <span id="middlecrossbar"></span>
         <span id="lastcrossbar"></span>
       </div>
-        <p className='menu'>{menuIsOpen?"menu":"fermer"}</p>
+      <p className="menu">
+        {menuIsOpen ? 'menu' : `${selectedLang === 'fr' ? 'fermer' : 'close'}`}
+      </p>
       <DesktopNav />
     </div>
   );

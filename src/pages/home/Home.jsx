@@ -12,6 +12,7 @@ import ContactBtn from '../../components/buttons/contactBtn/ContactBtn';
 const Home = () => {
   const dispatch = useDispatch();
   const refThree = useRef(null);
+  const URL = process.env.REACT_APP_FIREBASE_URL
 
   useLayoutEffect(() => {
     // setTimeout(() => {
@@ -21,7 +22,7 @@ const Home = () => {
     // }, 1);
     const dataFetch = async () => {
       await fetch(
-        'https://portfolio-a97f1-default-rtdb.europe-west1.firebasedatabase.app/projects/data.json'
+        `${URL}data.json`
       )
         .then((res) => {
           return res.json();

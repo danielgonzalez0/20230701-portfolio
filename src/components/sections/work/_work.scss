@@ -11,11 +11,17 @@
   h2 {
     text-align: center;
     margin: 0 auto;
-    padding: 120px 0 60px;
+    padding: 120px 0 0;
+  }
+  p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 60px;
+    font-size: 1.5rem;
   }
 }
 
-.work-container{
+.work-container {
   overflow: hidden;
   opacity: 0;
 }

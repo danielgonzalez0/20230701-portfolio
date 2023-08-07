@@ -1,14 +1,39 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import ReCAPTCHA from 'react-google-recaptcha';
+import axios from 'axios';
 
 const ContactForm = () => {
   const form = useRef();
+  const captchaRef = useRef(null);
   const { t } = useTranslation();
+  console.log(process.env.REACT_APP_SITE_KEY);
 
-  const sendEmail = (e) => {
+  function onChange(value) {
+    console.log('Captcha value:', value);
+  }
+
+  const sendEmail = async (e) => {
     e.preventDefault();
     const formMess = document.querySelector('.formMessage');
+    const token = captchaRef.current.getValue();
+    captchaRef.current.reset();
+
+    await axios
+      .post(
+        `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
+      )
+      .then((res) => {
+        if (res.data.success) {
+          console.log(res, res.data);
+        } else {
+          console.log('captcha error');
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
     emailjs
       .sendForm(
@@ -82,6 +107,13 @@ const ContactForm = () => {
             rows={10}
             placeholder={t('contact.form-message.input')}
             required
+          />
+        </div>
+        <div className="recaptcha-container">
+          <ReCAPTCHA
+            sitekey={process.env.REACT_APP_SITE_KEY}
+            ref={captchaRef}
+            onChange={onChange}
           />
         </div>
         <input type="submit" value={t('contact.send')} className="button" />
