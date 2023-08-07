@@ -111,7 +111,7 @@ const ContactForm = () => {
         </div>
         <div className="recaptcha-container">
           <ReCAPTCHA
-            sitekey={process.env.REACT_APP_SITE_KEY}
+            sitekey={`${process.env.REACT_APP_SITE_KEY}`}
             ref={captchaRef}
             onChange={onChange}
           />
