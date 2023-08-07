@@ -12,6 +12,7 @@ const ContactForm = () => {
 
   function onChange(value) {
     console.log('Captcha value:', value);
+    console.log('Captcha value:', value);
   }
 
   const sendEmail = async (e) => {
