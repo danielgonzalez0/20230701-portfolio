@@ -1,71 +1,86 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 import ReCAPTCHA from 'react-google-recaptcha';
-import axios from 'axios';
 
 const ContactForm = () => {
   const form = useRef();
   const captchaRef = useRef(null);
+  const [isSuccess, setIsSuccess] = useState(false);
   const { t } = useTranslation();
-  console.log(process.env.REACT_APP_SITE_KEY);
 
-  function onChange(value) {
-    console.log('Captcha value:', value);
-    console.log('Captcha value:', value);
-  }
-
-  const sendEmail = async (e) => {
-    e.preventDefault();
-    const formMess = document.querySelector('.formMessage');
+  async function onChange() {
     const token = captchaRef.current.getValue();
-    captchaRef.current.reset();
-
-    await axios
-      .post(
-        `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
-      )
+    await fetch(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.REACT_APP_SECRET_KEY}&response=${token}`,
+      {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+        },
+        withCredentials: true,
+        credentials: 'same-origin',
+      }
+    )
       .then((res) => {
-        if (res.data.success) {
-          console.log(res, res.data);
-        } else {
-          console.log('captcha error');
+        if (res) {
+          setIsSuccess(true);
         }
       })
       .catch((error) => {
         console.log(error);
       });
+  }
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICEID,
-        process.env.REACT_APP_EMAILJS_TEMPLATEID,
-        form.current,
-        process.env.REACT_APP_EMAIJS_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.txt);
-          form.current.reset();
-          formMess.innerHTML = `${t('contact.confirmation.success.part1')}`;
-          setTimeout(() => {
-            formMess.innerHTML = `${t('contact.confirmation.success.part2')}`;
-          }, 2000);
-          setTimeout(() => {
-            formMess.innerHTML = '';
-          }, 2500);
-        },
-        (error) => {
-          console.log(error);
-          formMess.innerHTML = `${t('contact.confirmation.error.part1')}`;
-          setTimeout(() => {
-            formMess.innerHTML = `${t('contact.confirmation.success.part2')}`;
-          }, 2000);
-          setTimeout(() => {
-            formMess.innerHTML = '';
-          }, 2500);
-        }
-      );
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    const formMess = document.querySelector('.formMessage');
+    captchaRef.current.reset();
+
+    if (isSuccess) {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_EMAILJS_SERVICEID,
+          process.env.REACT_APP_EMAILJS_TEMPLATEID,
+          form.current,
+          process.env.REACT_APP_EMAIJS_ID
+        )
+        .then(
+          (result) => {
+            console.log(result.txt);
+            form.current.reset();
+            formMess.innerHTML = `${t('contact.confirmation.success.part1')}`;
+            setTimeout(() => {
+              formMess.innerHTML = `${t('contact.confirmation.success.part2')}`;
+            }, 2000);
+            setTimeout(() => {
+              formMess.innerHTML = '';
+            }, 2500);
+          },
+          (error) => {
+            console.log(error);
+            formMess.innerHTML = `${t('contact.confirmation.error.part1')}`;
+            setTimeout(() => {
+              formMess.innerHTML = `${t('contact.confirmation.error.part2')}`;
+            }, 2000);
+            setTimeout(() => {
+              formMess.innerHTML = '';
+            }, 2500);
+          }
+        );
+      setIsSuccess(false);
+      captchaRef.current.reset();
+    } else {
+      formMess.innerHTML = `${t('contact.confirmation.error.part1')}`;
+      setTimeout(() => {
+        formMess.innerHTML = `${t('contact.confirmation.error.part2')}`;
+      }, 2000);
+      setTimeout(() => {
+        formMess.innerHTML = '';
+      }, 2500);
+    }
   };
 
   return (
