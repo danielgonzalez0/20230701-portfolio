@@ -15,6 +15,7 @@ import typeSciptLogo from '../../../assets/logo/typescript.svg';
 import mySQLLogo from '../../../assets/logo/mysql-3.svg';
 import expressLogo from '../../../assets/logo/express-109.svg';
 import mongoLogo from '../../../assets/logo/mongodb-icon-1.svg';
+import cv from '../../../assets/cv-daniel-gonzalez.pdf';
 import { useSelector } from 'react-redux';
 
 const Skills = () => {
@@ -26,6 +27,9 @@ const Skills = () => {
     <section id="skills">
       <div className="skills-container">
         <h2>{t('skills.title')}</h2>
+        <a href={cv} target="_blank" rel="noreferrer" className="button">
+          cv
+        </a>
         <h3 className="skill-desc">
           <span>{t('skills.description.part1')}</span>
           <span>{t('skills.description.part2')}</span>

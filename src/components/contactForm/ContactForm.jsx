@@ -125,6 +125,7 @@ const ContactForm = () => {
             required
           />
         </div>
+        <input type="submit" value={t('contact.send')} className="button" />
         <div className="recaptcha-container">
           <ReCAPTCHA
             sitekey={`${process.env.REACT_APP_SITE_KEY}`}
@@ -132,7 +133,6 @@ const ContactForm = () => {
             onChange={onChange}
           />
         </div>
-        <input type="submit" value={t('contact.send')} className="button" />
       </form>
     </div>
   );

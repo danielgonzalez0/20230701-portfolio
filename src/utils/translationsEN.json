@@ -67,7 +67,7 @@
       },
       "error": {
         "part1": "<p class='error tilt-in-left-1'>An error occurred, please try again.</p>",
-        "part2": "<p class='success slit-out-vertical'>An error occurred, please try again.</p>"
+        "part2": "<p class='error slit-out-vertical'>An error occurred, please try again.</p>"
       }
     }
   }

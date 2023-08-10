@@ -130,7 +130,7 @@ input[type='submit'] {
 .formMessage {
   transition: 0.3s ease-in-out;
   position: absolute;
-  bottom: 39px;
+  bottom: 135px;
   left: 40px;
   z-index: 2;
 }
@@ -141,15 +141,21 @@ input[type='submit'] {
   background: rgb(204, 14, 14);
 }
 
+.recaptcha-container{
+margin: 0 auto;
+}
+
+
 //media queries
 @media screen and (max-width: 650px) {
+
   input[type='submit'] {
     width: 100%;
     align-self: center;
   }
 
   .formMessage {
-    bottom: 140px;
+    bottom: 200px;
     left: 50%;
     transform: translateX(-50%);
   }

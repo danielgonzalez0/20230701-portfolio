@@ -4,7 +4,7 @@ export const statusSlice = createSlice({
   name: 'status',
   initialState: {
     isDarkMode: 'dark',
-    language: 'en',
+    language: 'fr',
     isMenuOpen: true,
   },
   reducers: {

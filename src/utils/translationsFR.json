@@ -67,7 +67,7 @@
       },
       "error": {
         "part1": "<p class='error tilt-in-left-1'>Une erreur s'est produite, veuillez réessayer</p>",
-        "part2": "<p class='success slit-out-vertical'>Une erreur s'est produite, veuillez réessayer</p>"
+        "part2": "<p class='error slit-out-vertical'>Une erreur s'est produite, veuillez réessayer</p>"
       }
     }
   }

@@ -65,12 +65,26 @@
       }
     }
   }
+
+  .skills-container{
+      .button {
+  &:hover,
+  &:focus-visible {
+    border: 2px solid $violet;
+    background-color: $white2;
+  }
+  &:focus-visible {
+    outline: 1px solid $violet;
+  }
+}
+  }
 }
 
 #skills {
   min-height: 500px;
   background-color: $grey1;
   padding: 120px 0;
+  
 
   h2 {
     margin: 0;
@@ -94,6 +108,28 @@
     padding: 40px 0;
     margin: 0 20px;
   }
+
+  .button {
+    margin-top: 20px;
+  padding: 10px 30px;
+  background: $turquoise;
+  border: 2px solid $turquoise;
+  color: $white2;
+  font-family: $font700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus-visible {
+    border: 2px solid $turquoise;
+    background: $black3;
+    color: $turquoise;
+  }
+  &:focus-visible {
+    outline: 1px solid $turquoise;
+  }
+}
+
 }
 
 .skills-main {
