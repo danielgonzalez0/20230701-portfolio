@@ -28,7 +28,7 @@ const Skills = () => {
       <div className="skills-container">
         <h2>{t('skills.title')}</h2>
         <a href={cv} target="_blank" rel="noreferrer" className="button">
-          cv
+          {language === "fr" ? 'télécharger mon CV' : "download my CV"}
         </a>
         <h3 className="skill-desc">
           <span>{t('skills.description.part1')}</span>

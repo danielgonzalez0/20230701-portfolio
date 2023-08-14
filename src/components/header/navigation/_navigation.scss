@@ -36,8 +36,18 @@
       height: 0;
       opacity: 0;
     }
-    li:hover {
+    li:hover,
+    li:focus,
+    li:active {
       background-color: $turquoise;
+    }
+    .isActive {
+      background-color: $turquoise;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $turquoise;
+      }
     }
   }
   .menu {
@@ -47,7 +57,6 @@
     right: 100px;
     bottom: 3px;
     text-align: center;
-  
   }
 }
 

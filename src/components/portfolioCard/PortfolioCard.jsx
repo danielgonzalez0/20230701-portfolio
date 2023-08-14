@@ -18,11 +18,26 @@ const PortfolioCard = ({ data }) => {
     }
   }, [control, inView]);
 
+  const getXvalue = () => {
+    if (window.innerWidth > 480) {
+      return Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1);
+    } else {
+      return Math.random() * 175 * (Math.random() > 0.4 ? 1 : -1);
+    }
+  };
+  const getYvalue = () => {
+    if (window.innerWidth > 480) {
+      return Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1);
+    } else {
+      return Math.random() * 60 * (Math.random() > 0.4 ? 1 : -1);
+    }
+  };
+
   const imgAnim = {
     initial: {
       opacity: 0,
-      x: Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1),
-      y: Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1),
+      x: getXvalue(),
+      y: getYvalue()
     },
     visible: {
       opacity: 1,
@@ -34,8 +49,8 @@ const PortfolioCard = ({ data }) => {
   const imgAnim2 = {
     initial: {
       opacity: 0,
-      x: Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1),
-      y: Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1),
+      x: getXvalue(),
+      y: getYvalue(),
     },
     visible: {
       opacity: 1,
@@ -47,8 +62,8 @@ const PortfolioCard = ({ data }) => {
   const imgAnim3 = {
     initial: {
       opacity: 0,
-      x: Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1),
-      y: Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1),
+      x: getXvalue(),
+      y: getYvalue(),
     },
     visible: {
       opacity: 1,
@@ -59,8 +74,6 @@ const PortfolioCard = ({ data }) => {
 
   return (
     <div className="card-container" ref={refThree}>
-      {/* {topPos < 800 ? (
-        <> */}
       <div className="screenshots">
         <motion.img
           src={data.cover.desktop}
