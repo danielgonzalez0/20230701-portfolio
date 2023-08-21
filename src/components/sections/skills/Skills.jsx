@@ -17,18 +17,26 @@ import expressLogo from '../../../assets/logo/express-109.svg';
 import mongoLogo from '../../../assets/logo/mongodb-icon-1.svg';
 import cv from '../../../assets/cv-daniel-gonzalez.pdf';
 import { useSelector } from 'react-redux';
+import useAnalyticsEventTracker from '../../../utils/useAnalyticsEventTracker';
 
 const Skills = () => {
   const { t } = useTranslation();
   const darkMode = useSelector((state) => state.status.isDarkMode);
   const language = useSelector((state) => state.status.language);
+  const gaEventTracker = useAnalyticsEventTracker('skills-section');
 
   return (
     <section id="skills">
       <div className="skills-container">
         <h2>{t('skills.title')}</h2>
-        <a href={cv} target="_blank" rel="noreferrer" className="button">
-          {language === "fr" ? 'télécharger mon CV' : "download my CV"}
+        <a
+          href={cv}
+          target="_blank"
+          rel="noreferrer"
+          className="button"
+          onClick={() => gaEventTracker('download CV')}
+        >
+          {language === 'fr' ? 'télécharger mon CV' : 'download my CV'}
         </a>
         <h3 className="skill-desc">
           <span>{t('skills.description.part1')}</span>

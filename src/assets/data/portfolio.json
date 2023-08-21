@@ -1,22 +1,10 @@
 [
   {
-    "id": 1,
-    "project": "HRnet",
-    "title": {
-      "en": "HRnet",
-      "fr": "HRnet"
-    },
     "cover": {
       "desktop": "https://i.imgur.com/i2eq0VE.png",
-      "tablet": "https://i.imgur.com/LbSwN0L.png",
-      "mobile": "https://i.imgur.com/JOBRvbP.png"
+      "mobile": "https://i.imgur.com/JOBRvbP.png",
+      "tablet": "https://i.imgur.com/LbSwN0L.png"
     },
-    "pictures": [
-      "https://i.imgur.com/i2eq0VE.png",
-      "https://i.imgur.com/dJP1Pok.png",
-      "https://i.imgur.com/wHWQfF1.png",
-      "https://i.imgur.com/Fkh7ljZ.png"
-    ],
     "description": {
       "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the main goal was to switch a jQuery library to React. Specifications was to make a new version of the 'Create Employee' and 'Employee List' pages with React, add a state management system, ensure that everything is consistent in terms of style",
       "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif principal était de passer d'une bibliothèque jQuery à React. Les spécifications consistaient à créer une nouvelle version des pages 'Create Employee' et 'Employee List' avec React, à ajouter un système de gestion d'état, et à veiller à ce que tout soit cohérent en termes de style."
@@ -39,11 +27,15 @@
         "documentation avec JSDoc et proptypes"
       ]
     },
-    "keywords": [
-      "react-application",
-      "dashboard",
-      "formulaires"
+    "id": 1,
+    "keywords": ["react-application", "dashboard", "formulaires"],
+    "pictures": [
+      "https://i.imgur.com/i2eq0VE.png",
+      "https://i.imgur.com/dJP1Pok.png",
+      "https://i.imgur.com/wHWQfF1.png",
+      "https://i.imgur.com/Fkh7ljZ.png"
     ],
+    "project": "HRnet",
     "tags": {
       "en": [
         "react",
@@ -66,28 +58,19 @@
         "react-hook-form"
       ]
     },
+    "title": {
+      "en": "HRnet",
+      "fr": "HRnet"
+    },
     "urlCode": "https://github.com/danielgonzalez0/P14-OC-20230612-HRnet",
     "urlDemo": "https://p14-oc-20230612-h-rnet.vercel.app/"
   },
   {
-    "id": 3,
-    "project": "Kasa",
-    "title": {
-      "en": "Kasa",
-      "fr": "Kasa"
-    },
     "cover": {
-      "desktop": "https://i.imgur.com/8SwCfTX.png",
-      "tablet": "https://i.imgur.com/8cLZ6sc.png",
-      "mobile": "https://i.imgur.com/qG7mqWp.png"
+      "desktop": "https://i.imgur.com/ScHROCe.png",
+      "mobile": "https://i.imgur.com/DLcwzju.png",
+      "tablet": "https://i.imgur.com/3JeGqwZ.png"
     },
-    "pictures": [
-      "https://i.imgur.com/oE6i6AV.png",
-      "https://i.imgur.com/jZCzprJ.png",
-      "https://i.imgur.com/QHdEzpQ.png",
-      "https://i.imgur.com/HPYZv6y.png",
-      "https://i.imgur.com/4oyYyp2.png"
-    ],
     "description": {
       "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines for image galleries, dropdown buttons and global structure of the application like logical structure, 1 composent per file, using props and states,...",
       "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif était de développer une application web avec React et React Router, en utilisant des maquettes Figma comme base. Des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
@@ -114,6 +97,7 @@
         "gestion des erreurs pour les urls"
       ]
     },
+    "id": 3,
     "keywords": [
       "Équipements de base",
       "Micro-Ondes",
@@ -121,7 +105,15 @@
       "Frigo",
       "WIFI"
     ],
-  "tags": {
+    "pictures": [
+      "https://i.imgur.com/oE6i6AV.png",
+      "https://i.imgur.com/jZCzprJ.png",
+      "https://i.imgur.com/QHdEzpQ.png",
+      "https://i.imgur.com/HPYZv6y.png",
+      "https://i.imgur.com/4oyYyp2.png"
+    ],
+    "project": "Kasa",
+    "tags": {
       "en": [
         "react",
         "react-router-dom",
@@ -137,8 +129,88 @@
         "sass",
         "prop-types",
         "accessibilité"
-      ]},
+      ]
+    },
+    "title": {
+      "en": "Kasa",
+      "fr": "Kasa"
+    },
     "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
     "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
+  },
+  {
+    "cover": {
+      "desktop": "https://i.imgur.com/PePjqXg.png",
+      "mobile": "https://i.imgur.com/w1Z78w3.png",
+      "tablet": "https://i.imgur.com/kjPsQtq.png"
+    },
+    "description": {
+      "en": "The project is part of a specialized training in web development offered by OpenClassrooms. The goal was to build a prototype for a social network for a fictional company. For the database, I used MySQL. For the backend, I used Node.js and Express, and React for the frontend.",
+      "fr": "Le projet fait partie d'une formation spécialisée dans le développement web dispensée par OpenClassrooms. L'objectif était de construire un prototype de réseau social pour une entreprise fictive. Pour la base de données j'ai utilisé MySQL. Pour le backend j'ai utilisé nodeJS et Express et React pour le front"
+    },
+    "features": {
+      "en": [
+        "React Router",
+        "Functional components",
+        "Using Redux Toolkit to create a global state manager",
+        "Like system",
+        "Responsive design",
+        "Authentication system with token",
+        "Password encryption",
+        "Forms with input control"
+      ],
+      "fr": [
+        "react router",
+        "composants fonctionnels",
+        "utiliser Redux Toolkit pour créer un gestionnaire d'état global",
+        "système de like",
+        "responsive design",
+        "système d'authentification avec token",
+        "cryptage du mot de passe",
+        "formulaires avec contrôle de la saisie"
+      ]
+    },
+    "id": 1,
+    "keywords": ["react-application", "SQL", "formulaires", "API"],
+    "pictures": [
+      "https://i.imgur.com/PePjqXg.png",
+      "https://i.imgur.com/w1Z78w3.png",
+      "https://i.imgur.com/kjPsQtq.png"
+    ],
+    "project": "Groupomania - social network",
+    "tags": {
+      "en": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "redux-toolkit",
+        "MySQL",
+        "Express",
+        "node.js",
+        "JWT",
+        "bcrypt",
+        "multer"
+      ],
+      "fr": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "redux-toolkit",
+        "MySQL",
+        "Express",
+        "node.js",
+        "JWT",
+        "bcrypt",
+        "multer"
+      ]
+    },
+    "title": {
+      "en": "Groupomania - social network",
+      "fr": "Groupomania - réseau social"
+    },
+    "urlCode": "https://github.com/danielgonzalez0/DanielGonzalez_7_28042022",
+    "urlDemo": "https://www.youtube.com/watch?v=ATJyLR6_BIg"
   }
 ]

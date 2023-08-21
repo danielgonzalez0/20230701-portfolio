@@ -8,7 +8,6 @@ const Work = () => {
   const portfolioArray = useSelector((state) => state.projects);
   const selectedLang = useSelector((state)=>state.status.language)
   const { t } = useTranslation();
-  console.log(portfolioArray);
 
   return (
     <>

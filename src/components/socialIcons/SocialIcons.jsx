@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 const SocialIcons = () => {
   useEffect(() => {
     const icons = document.querySelectorAll('.social-network .hover');
-    console.log(icons);
     icons.forEach((link) => {
       link.addEventListener('mouseover', () => {
         link.style.transform = `translate(${0}px, ${-10}px)`;

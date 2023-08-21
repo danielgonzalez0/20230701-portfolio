@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import useAnalyticsEventTracker from '../../utils/useAnalyticsEventTracker';
 
 const PortfolioCard = ({ data }) => {
   const language = useSelector((state) => state.status.language);
   const control = useAnimation();
   const [ref, inView] = useInView();
   const refThree = useRef(null);
+    const gaEventTracker = useAnalyticsEventTracker(`Project ${data.project}`);
 
   useEffect(() => {
     if (inView) {
@@ -122,6 +124,7 @@ const PortfolioCard = ({ data }) => {
               rel="noreferrer"
               href={data.urlDemo}
               className="button"
+              onClick={() => gaEventTracker('Demo')}
             >
               Demo
             </a>
@@ -131,6 +134,7 @@ const PortfolioCard = ({ data }) => {
             rel="noreferrer"
             href={data.urlCode}
             className="button"
+            onClick={() => gaEventTracker('Code')}
           >
             Code
           </a>

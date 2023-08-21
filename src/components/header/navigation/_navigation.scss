@@ -60,6 +60,25 @@
   }
 }
 
+
+#light #sidebar {
+  ul {
+    li:hover,
+    li:focus,
+    li:active {
+      background-color: $violet;
+    }
+    .isActive {
+      background-color: $violet;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $violet;
+      }
+    }
+  }
+}
+
 /* code ajouté */
 .hidden span {
   position: absolute;
