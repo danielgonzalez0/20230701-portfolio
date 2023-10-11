@@ -1,6 +1,74 @@
 [
   {
     "cover": {
+      "desktop": "https://i.imgur.com/xiArDNL.png",
+      "mobile": "https://i.imgur.com/PlyAUlr.png",
+      "tablet": "https://i.imgur.com/H7jv2E6.png"
+    },
+    "description": {
+      "en": "Crypto Currency Dashboard Based on the Coingecko API. Ability to filter, sort, and save favorite cryptocurrencies. Option to exclude stable coins.",
+      "fr": "Tableau de bord des crypto-monnaies basé sur l'API Coingecko. Possibilité de filtrer, trier et enregistrer vos crypto-monnaies préférées. Option pour exclure les stable coins."
+    },
+    "features": {
+      "en": [
+        "react router",
+        "functional components",
+        "tables, charts",
+        "filters, sorts, favorites features",
+        "responsive design",
+        "documentation with JSDoc and proptypes"
+      ],
+      "fr": [
+        "react router",
+        "composants fonctionnels",
+        "tableau et graphiques",
+        "fonctionnalités de filtre, tri et favoris",
+        "responsive design",
+        "documentation avec JSDoc et proptypes"
+      ]
+    },
+    "id": 4,
+    "keywords": ["react-application", "dashboard", "charts"],
+    "pictures": [
+      "https://i.imgur.com/i2eq0VE.png",
+      "https://i.imgur.com/dJP1Pok.png",
+      "https://i.imgur.com/wHWQfF1.png",
+      "https://i.imgur.com/Fkh7ljZ.png"
+    ],
+    "project": "Dashboard Crypto",
+    "tags": {
+      "en": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "prop-types",
+        "redux",
+        "recharts",
+        "axios",
+        "api Coingecko"
+      ],
+      "fr": [
+        "react",
+        "react-router-dom",
+        "javascript",
+        "sass",
+        "prop-types",
+        "redux",
+        "recharts",
+        "axios",
+        "api Coingecko"
+      ]
+    },
+    "title": {
+      "en": "Dashboard Crypto",
+      "fr": "Dashboard Crypto"
+    },
+    "urlCode": "https://github.com/danielgonzalez0/TP4-crypto-watch-dashboard-react",
+    "urlDemo": "https://tp-4-crypto-watch-dashboard-react.vercel.app/"
+  },
+  {
+    "cover": {
       "desktop": "https://i.imgur.com/i2eq0VE.png",
       "mobile": "https://i.imgur.com/JOBRvbP.png",
       "tablet": "https://i.imgur.com/LbSwN0L.png"
