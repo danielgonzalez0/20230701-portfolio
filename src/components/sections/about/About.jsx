@@ -33,8 +33,7 @@ const About = () => {
 
             <Trans t={t}>
               <p>
-                <span>{t('about.part3')}</span>{' '}
-                <span>{t('about.part3Bis')}</span>
+                <span>{t('about.part3')}</span>
               </p>
             </Trans>
 

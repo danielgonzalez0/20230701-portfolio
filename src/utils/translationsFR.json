@@ -2,18 +2,17 @@
   "intro": {
     "title": "Bonjour, moi c'est Daniel",
     "description": {
-      "part1": "Un développeur Frontend junior axé sur React",
+      "part1": "Un développeur Frontend axé sur React",
       "part2": "motivé à construire l'interface de vos applications web"
     }
   },
   "about": {
     "title": "Un peu plus à propos de moi",
     "part1": "Une passion pour la programmation, une détermination à se réinventer et une expertise dans le développement web front end avec une spécialisation en React.",
-    "part1Bis": "À 42 ans, je suis fier de me lancer dans une carrière passionnante en tant que <strong>développeur web junior</strong>.",
+    "part1Bis": "À 43 ans, je suis fier de me lancer dans une carrière passionnante en tant que <strong>développeur Frontend</strong>.",
     "part2": "Après 15 ans d'expérience en <strong>contrôle de gestion</strong> dans diverses grandes entreprises, j'ai décidé de me reconvertir dans <strong>le développement front-end</strong>.",
     "part2Bis": "J'ai suivi des formations chez <strong>OpenClassrooms</strong> en tant que développeur web et développeur front-end spécialisé dans <strong>React</strong>.",
     "part3": "Au cours des deux dernières années, j'ai pu acquérir de nombreuses compétences et connaissances à travers une variété de projets dans différents langages de programmation et dans différentes situations professionnelles.",
-    "part3Bis": "Conscient qu'il me reste encore beaucoup de chemin à parcourir pour améliorer mes compétences, je suis plus motivé que jamais pour apprendre et m'améliorer.",
     "part4": "Lorsque je ne suis pas derrière un ordinateur, j'aime passer du temps avec ma famille, jouer au football avec mes amis ou jouer à des jeux vidéo. Si vous avez une bonne opportunité qui correspond à mes compétences et à mon expérience, n'hésitez pas à me <strong>contacter</strong> !",
     "part5": "Ce que j'ai acquis durant ma vie professionnelle: ",
     "part6": "Résolution de problèmes",
