@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Intro from '../../components/sections/intro/Intro';
 import About from '../../components/sections/about/About';
 import Skills from '../../components/sections/skills/Skills';
@@ -8,22 +8,16 @@ import handleAnimationLaunch from '../../utils/handleAnimationLaunch';
 import { useDispatch } from 'react-redux';
 import { getAllProjects } from '../../redux/projects.slice';
 import ContactBtn from '../../components/buttons/contactBtn/ContactBtn';
+import { signInAnonymously } from 'firebase/auth';
+import { auth } from '../../utils/firebase';
 
 const Home = () => {
   const dispatch = useDispatch();
   const refThree = useRef(null);
-  const URL = process.env.REACT_APP_FIREBASE_URL
-
-  useLayoutEffect(() => {
-    // setTimeout(() => {
-      window.addEventListener('scroll', () => {
-        handleAnimationLaunch(refThree.current);
-      });
-    // }, 1);
+  const URL = process.env.REACT_APP_FIREBASE_URL;
+  
     const dataFetch = async () => {
-      await fetch(
-        `${URL}data.json`
-      )
+      await fetch(`${URL}data.json`)
         .then((res) => {
           return res.json();
         })
@@ -34,7 +28,22 @@ const Home = () => {
           console.log(err);
         });
     };
-    dataFetch();
+
+  const handleAuthAnonymous = () => {
+    signInAnonymously(auth)
+      .then(() => dataFetch())
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
+  useEffect(() => {
+    // setTimeout(() => {
+    window.addEventListener('scroll', () => {
+      handleAnimationLaunch(refThree.current);
+    });
+    // }, 1);
+    handleAuthAnonymous();
   }, []);
 
   return (
@@ -46,7 +55,7 @@ const Home = () => {
         <About />
         <Contact />
       </div>
-    <ContactBtn/>
+      <ContactBtn />
     </main>
   );
 };
