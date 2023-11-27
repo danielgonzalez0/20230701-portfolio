@@ -15,19 +15,20 @@ const Home = () => {
   const dispatch = useDispatch();
   const refThree = useRef(null);
   const URL = process.env.REACT_APP_FIREBASE_URL;
+
   
-    const dataFetch = async () => {
-      await fetch(`${URL}data.json`)
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          dispatch(getAllProjects(data));
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    };
+  const dataFetch = async () => {
+    await fetch(`${URL}data.json`)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        dispatch(getAllProjects(data));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   const handleAuthAnonymous = () => {
     signInAnonymously(auth)
@@ -35,15 +36,19 @@ const Home = () => {
       .catch((error) => {
         console.error(error);
       });
-  }
+  };
 
   useEffect(() => {
-    // setTimeout(() => {
-    window.addEventListener('scroll', () => {
-      handleAnimationLaunch(refThree.current);
-    });
-    // }, 1);
     handleAuthAnonymous();
+
+    const handleScroll = () => {
+      handleAnimationLaunch(refThree.current);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (

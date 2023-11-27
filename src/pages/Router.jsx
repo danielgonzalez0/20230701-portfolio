@@ -6,9 +6,11 @@ import Footer from '../components/footer/Footer';
 import { useSelector } from 'react-redux';
 import ReactGA from 'react-ga';
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_TRACKING_ID;
+// @ts-ignore
 ReactGA.initialize(TRACKING_ID);
 
 const Router = () => {
+  // @ts-ignore
   const darkMode = useSelector((state) => state.status.isDarkMode);
 
     useEffect(() => {

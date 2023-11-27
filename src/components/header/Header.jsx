@@ -8,15 +8,24 @@ import DesktopNav from './navigation/DesktopNav';
 import NavMobile from './navigation/NavMobile';
 
 const Header = () => {
+  // @ts-ignore
   const isDarkMode = useSelector((state) => state.status.isDarkMode);
   const mediaMatch = window.matchMedia('(max-width: 870px)');
   const [matches, setMatches] = useState(mediaMatch.matches);
 
   useEffect(() => {
-    const handler = (e) => {
-      setMatches(e.matches);
-    };
-    mediaMatch.addEventListener('change', handler);
+    if(mediaMatch) {
+
+
+
+      const handler = (e) => {
+        setMatches(e.matches);
+      };
+      mediaMatch.addEventListener('change', handler);
+      return () => {
+        mediaMatch.removeEventListener('change', handler);
+      };
+    }
   }, []);
 
   return (

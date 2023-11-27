@@ -9,6 +9,8 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {
-  }
+  "globals": {
+    "process": "readonly"
+  },
+  "rules": {}
 }
