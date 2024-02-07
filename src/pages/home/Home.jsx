@@ -24,6 +24,7 @@ const Home = () => {
       })
       .then((data) => {
         dispatch(getAllProjects(data));
+        console.log(data);
       })
       .catch((err) => {
         console.log(err);
