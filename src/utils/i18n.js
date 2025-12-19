@@ -2,6 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import translationEN from './translationsEN.json';
 import translationFR from './translationsFR.json';
+import toolsFR from '../components/sections/skills/tools-fr.json';
+import toolsEN from '../components/sections/skills/tools-en.json';
 // import Backend from 'i18next-http-backend';
 // import LanguageDetector from 'i18next-browser-languagedetector';
 // don't want to use this?
@@ -11,9 +13,11 @@ import translationFR from './translationsFR.json';
  const resources = {
    en: {
      translation: translationEN,
+     tools: toolsEN
    },
    fr: {
      translation: translationFR,
+     tools: toolsFR
    },
  };
 

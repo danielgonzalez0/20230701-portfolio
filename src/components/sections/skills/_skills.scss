@@ -9,12 +9,24 @@
       padding: 20px;
       border-radius: 10px;
     }
+        .tools-category-list {
+      padding: 10px;
+    }
+    h4{
+      margin: 10px 0;
+      text-align: center;
+      font-size: larger;
+      font-weight: 400;
+    }
+    h4:first-child{
+      margin-top: 0;
+    }
   }
   .skills-main {
     background: rgba($white2, 0.2);
     .skills-main-card {
       color: $white2;
-      span{
+      span {
         background: $turquoise;
       }
     }
@@ -43,13 +55,26 @@
       border-radius: 10px;
       font-weight: 500;
     }
+
+   .tools-category-list {
+      padding: 10px;
+    }
+    h4{
+      margin: 10px 0;
+      text-align: center;
+      font-size: larger;
+      font-weight: 400;
+    }
+    h4:first-child{
+      margin-top: 0;
+    }
   }
 
-    .skills-main {
+  .skills-main {
     background: rgba($grey2, 0.3);
     .skills-main-card {
       color: $black3;
-      span{
+      span {
         color: $white2;
         background: $violet;
       }
@@ -66,17 +91,17 @@
     }
   }
 
-  .skills-container{
-      .button {
-  &:hover,
-  &:focus-visible {
-    border: 2px solid $violet;
-    background-color: $white2;
-  }
-  &:focus-visible {
-    outline: 1px solid $violet;
-  }
-}
+  .skills-container {
+    .button {
+      &:hover,
+      &:focus-visible {
+        border: 2px solid $violet;
+        background-color: $white2;
+      }
+      &:focus-visible {
+        outline: 1px solid $violet;
+      }
+    }
   }
 }
 
@@ -84,7 +109,6 @@
   min-height: 500px;
   background-color: $grey1;
   padding: 120px 0;
-  
 
   h2 {
     margin: 0;
@@ -111,25 +135,24 @@
 
   .button {
     margin-top: 20px;
-  padding: 10px 30px;
-  background: $turquoise;
-  border: 2px solid $turquoise;
-  color: $white2;
-  font-family: $font700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  &:hover,
-  &:focus-visible {
+    padding: 10px 30px;
+    background: $turquoise;
     border: 2px solid $turquoise;
-    background: $black3;
-    color: $turquoise;
+    color: $white2;
+    font-family: $font700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    &:hover,
+    &:focus-visible {
+      border: 2px solid $turquoise;
+      background: $black3;
+      color: $turquoise;
+    }
+    &:focus-visible {
+      outline: 1px solid $turquoise;
+    }
   }
-  &:focus-visible {
-    outline: 1px solid $turquoise;
-  }
-}
-
 }
 
 .skills-main {
@@ -167,21 +190,17 @@
 
 .skills-content {
   display: flex;
-  align-items: stretch;
+  gap: 48px;
   justify-content: center;
   min-width: 350px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1240px;
   p {
     text-align: center;
     margin: 30px 0 30px;
     text-transform: uppercase;
     font-size: 1.2rem;
   }
-}
-
-.skills-logo-section {
-  flex: 0 0 60%;
 }
 
 .skills-logo-container {
@@ -212,7 +231,9 @@
 }
 
 .skills-other-section {
-  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   span {
     margin-left: 15px;
   }
@@ -227,6 +248,7 @@
   }
 
   ul {
+    padding: 10px;
     li {
       width: 100%;
     }
@@ -234,7 +256,7 @@
 }
 
 //media queries
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1240px) {
   .skills-content {
     flex-direction: column;
   }

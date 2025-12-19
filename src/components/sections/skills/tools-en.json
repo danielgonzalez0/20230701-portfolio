@@ -1,0 +1,19 @@
+{
+  "tools": {
+    "title": "Tools",
+    "categories": [
+      {
+        "title": "Development",
+        "items": ["Git & GitHub", "Chrome DevTools", "Command line"]
+      },
+      {
+        "title": "Quality and collaboration",
+        "items": ["Storybook", "Postman", "Figma"]
+      },
+      {
+        "title": "CI and environment",
+        "items": ["GitHub Actions", "Docker (project usage)"]
+      }
+    ]
+  }
+}

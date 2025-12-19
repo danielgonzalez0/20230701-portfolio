@@ -2,40 +2,85 @@
   "intro": {
     "title": "Bonjour, moi c'est Daniel",
     "description": {
-      "part1": "Un développeur Web axé sur React",
-      "part2": "motivé à construire l'interface de vos applications web"
+      "part1": "Je conçois des interfaces frontend avec React",
+      "part2": "en privilégiant la clarté, l’accessibilité et la maintenabilité"
     }
   },
   "about": {
     "title": "Un peu plus à propos de moi",
-    "part1": "Une passion pour la programmation, une détermination à se réinventer et une expertise dans le développement web front end avec une spécialisation en React.",
-    "part1Bis": "À 43 ans, je suis fier de me lancer dans une carrière passionnante en tant que <strong>développeur Frontend</strong>.",
-    "part2": "Après 15 ans d'expérience en <strong>contrôle de gestion</strong> dans diverses grandes entreprises, j'ai décidé de me reconvertir dans <strong>le développement front-end</strong>.",
-    "part2Bis": "J'ai suivi des formations chez <strong>OpenClassrooms</strong> en tant que développeur web et développeur front-end spécialisé dans <strong>React</strong>.",
-    "part3": "Au cours des deux dernières années, j'ai pu acquérir de nombreuses compétences et connaissances à travers une variété de projets dans différents langages de programmation et dans différentes situations professionnelles.",
-    "part4": "Lorsque je ne suis pas derrière un ordinateur, j'aime passer du temps avec ma famille, jouer au football avec mes amis ou jouer à des jeux vidéo. Si vous avez une bonne opportunité qui correspond à mes compétences et à mon expérience, n'hésitez pas à me <strong>contacter</strong> !",
-    "part5": "Ce que j'ai acquis durant ma vie professionnelle: ",
-    "part6": "Résolution de problèmes",
-    "part7": "Travail en collaboration et esprit d'équipe",
-    "part8": "Capacité d'adaptation et organisation",
-    "part9": "Gestion du temps, rigueur et autonomie",
-    "part10": "Là où j'ai travaillé:"
+    "part1": "Je suis <strong>développeur frontend</strong> (React / TypeScript), et j’accorde une attention particulière à la qualité du code, à l’accessibilité et à la maintenabilité des interfaces.",
+    "part1Bis": "J’ai travaillé 14 mois au sein du <strong>Design System de Société Générale</strong>, où j’ai contribué à la création et à l’évolution de composants UI réutilisables dans un environnement bancaire exigeant.",
+    "part2": "Après 15 ans d’expérience en <strong>contrôle de gestion</strong> dans de grandes entreprises, j’ai choisi de me reconvertir dans le développement front-end.",
+    "part2Bis": "J’ai suivi des formations chez <strong>OpenClassrooms</strong> (développement web puis spécialisation React) et j’ai récemment <strong>finalisé mon titre de Concepteur Développeur d’Applications (CDA)</strong> à la <strong>Wild Code School</strong>.",
+    "part3": "Aujourd’hui, je recherche <strong>mon premier poste de développeur frontend</strong>. Je souhaite rejoindre une équipe où je peux continuer à progresser techniquement tout en apportant une contribution fiable et utile, avec une approche centrée sur la compréhension du besoin, la structuration des solutions et la qualité de l’exécution.",
+    "part4": "Mon parcours hybride me permet d’aborder les projets avec recul, rigueur et sens des responsabilités, tout en restant ouvert à l’apprentissage et à l’amélioration continue.",
+    "part5": "Ce que j’apporte dans une équipe :",
+    "part6": "Capacité d’analyse et résolution de problèmes",
+    "part7": "Collaboration, communication et esprit d’équipe",
+    "part8": "Organisation, adaptabilité et autonomie",
+    "part9": "Fiabilité, rigueur et respect des engagements",
+    "part10": "Là où j’ai travaillé :"
   },
   "skills": {
-    "title": "Compétences",
+    "title": "Compétences et savoir-être",
     "description": {
-      "part1": "Besoin d'un développeur Front End ?",
-      "part2": "Que puis-je faire pour vous:"
+      "part1": "Ce que j’applique concrètement dans mes projets frontend",
+      "part2": "issu de mon expérience en Design System et de mon projet CDA"
     },
     "skills": {
-      "part1": "Créer des applications web dynamiques avec Javascript et React",
-      "part2": "Mettre en place des dashboards complexes avec des graphiques",
-      "part3": "Résoudre des probèmes techniques et moderniser / optimiser votre code",
-      "part4": "Préparer des mockups pour vos clients",
-      "part5": "Mettre en oeuvre des tests unitaires et débugger du code"
+      "title": "Compétences et savoir-être",
+      "description": {
+        "part1": "Ce que j’applique concrètement dans mes projets frontend",
+        "part2": "issu de mon expérience en Design System et de mon projet CDA"
+      },
+      "part1": {
+        "title": "Conception",
+        "summary": "Analyser le besoin des US et choisir des solutions adaptées",
+        "details": [
+          "Lecture et compréhension des user stories et des contraintes fonctionnelles",
+          "Identification des cas limites (états vides, erreurs, chargement)",
+          "Choix de solutions simples et adaptées, sans sur-ingénierie"
+        ]
+      },
+      "part2": {
+        "title": "Structure des interfaces",
+        "summary": "Concevoir des interfaces cohérentes et réutilisables",
+        "details": [
+          "Découpage des interfaces en composants clairs et bien définis",
+          "Réutilisation de composants existants avant d’en créer de nouveaux",
+          "Respect de conventions de nommage et de structure partagées"
+        ]
+      },
+      "part3": {
+        "title": "Qualité frontend",
+        "summary": "Porter attention à la qualité, l’accessibilité et la maintenabilité",
+        "details": [
+          "Code lisible et typé avec TypeScript",
+          "Prise en compte de l’accessibilité dès l’intégration (sémantique, focus, contrastes)",
+          "Vigilance constante sur la dette technique"
+        ]
+      },
+      "part4": {
+        "title": "Évolution du code",
+        "summary": "Faire évoluer un code existant de manière progressive",
+        "details": [
+          "Analyse du code existant avant toute modification",
+          "Corrections ciblées plutôt que réécritures complètes",
+          "Refactorisation mesurée lorsque nécessaire"
+        ]
+      },
+      "part5": {
+        "title": "Collaboration",
+        "summary": "Travailler efficacement avec designers et équipes produit",
+        "details": [
+          "Échanges réguliers avec les designers et les équipes produit",
+          "Participation aux revues de code",
+          "Prise en compte des retours et ajustements itératifs"
+        ]
+      }
     },
-    "intro": "J'apprends le développement web depuis environ 2 ans, et je suis toujours désireux d'en apprendre davantage dans ce secteur en constante évolution.",
-    "part1": "Quelques technologies que j'ai utilisé:"
+    "intro": "Mon objectif est d’adopter une approche pragmatique et orientée qualité : comprendre le besoin, concevoir une solution adaptée, puis livrer un code lisible, maintenable et fiable.",
+    "part1": "Technologies et outils utilisés"
   },
   "work": {
     "title": "Quelques projets réalisés"

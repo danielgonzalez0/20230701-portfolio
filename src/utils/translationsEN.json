@@ -2,39 +2,79 @@
   "intro": {
     "title": "Hi, I'm Daniel Gonzalez",
     "description": {
-      "part1": "A Web Developer focused on React",
-      "part2": "motivated to build the interface of your web applications"
+      "part1": "I build frontend interfaces with React",
+      "part2": "with a focus on clarity, accessibility, and long-term maintainability"
     }
   },
-  "about": {
-    "title": "A little about me",
-    "part1": "A passion for programming, a determination to reinvent myself, and expertise in front-end web development with a specialization in React.",
-    "part1Bis": "At 43 years old, I am proud to embark on an exciting career as <strong>a  front-end developer</strong>. ",
-    "part2": "After 15 years of experience on <strong>controlling</strong> in various companies, I decided to switch to <strong>front-end development</strong>.",
-    "part2Bis": "I have followed training courses at <strong>OpenClassrooms</strong> as a web developer and front-end developer specialising in <strong>React</strong>.",
-    "part3": "Over the past 2 years, I was able to acquire a wealth of skills and knowledge through a variety of projects in different programming languages and in different professional situations.",
-    "part4": "When I'm not behind a computer, I enjoy spending time with my family, playing football with my friends or playing video games.I'm open to job offers that allow me to learn and progress. If you have a good opportunity that matches my skills and experience, don't hesitate to <strong>contact me</strong>!",
-    "part5": "What I have learnt in my professional life: ",
-    "part6": "Problem solving",
-    "part7": "Collaboration and team spirit",
-    "part8": "Adaptability and organisation",
-    "part9": "Time management, rigour and autonomy",
-    "part10": "Where I've worked:"
-  },
+"about": {
+  "title": "A bit more about me",
+  "part1": "I’m a <strong>frontend developer</strong> (React / TypeScript), with a strong focus on code quality, accessibility, and maintainable user interfaces.",
+  "part1Bis": "I spent 14 months within <strong>Société Générale’s Design System</strong>, contributing to the creation and evolution of reusable UI components in a demanding banking environment.",
+  "part2": "After 15 years working in <strong>financial controlling</strong> for large companies, I decided to transition into frontend development.",
+  "part2Bis": "I trained with <strong>OpenClassrooms</strong> (web development, then React specialization) and recently <strong>completed my Application Developer (CDA) degree</strong> at <strong>Wild Code School</strong>.",
+  "part3": "I am now looking for <strong>my first frontend developer position</strong>. I want to join a team where I can keep growing technically while contributing in a reliable and meaningful way, with an approach focused on understanding needs, structuring solutions, and delivering quality work.",
+  "part4": "My hybrid background allows me to bring perspective, rigor, and a strong sense of responsibility, while staying open to learning and continuous improvement.",
+  "part5": "What I bring to a team:",
+  "part6": "Analytical thinking and problem-solving",
+  "part7": "Collaboration, communication, and team spirit",
+  "part8": "Organization, adaptability, and autonomy",
+  "part9": "Reliability, rigor, and ownership",
+  "part10": "Where I’ve worked:"
+},
   "skills": {
-    "title": "Skills",
+    "title": "Skills and professional mindset",
     "description": {
-      "part1": "Need a Front End developer?",
-      "part2": "What can I do for you:"
+      "part1": "What I apply concretely in my frontend projects",
+      "part2": "based on my experience in a Design System and my CDA project"
     },
     "skills": {
-      "part1": "Creating dynamic web applications with Javascript and React",
-      "part2": "Setting up complex dashboards with graphs",
-      "part3": "Resolving technical issues and modernizing/optimizing your code",
-      "part4": "Preparing mockups for your clients",
-      "part5": "Implementing unit tests and debugging code"
+      "part1": {
+        "title": "Design & conception",
+        "summary": "Analyze user stories and choose appropriate solutions",
+        "details": [
+          "Reading and understanding user stories and functional constraints",
+          "Identifying edge cases (empty states, errors, loading states)",
+          "Choosing simple and appropriate solutions, avoiding over-engineering"
+        ]
+      },
+      "part2": {
+        "title": "Interface structure",
+        "summary": "Design coherent and reusable interfaces",
+        "details": [
+          "Breaking down interfaces into clear and well-defined components",
+          "Reusing existing components before creating new ones",
+          "Following shared naming and structural conventions"
+        ]
+      },
+      "part3": {
+        "title": "Frontend quality",
+        "summary": "Pay attention to quality, accessibility, and maintainability",
+        "details": [
+          "Writing readable and strongly typed code with TypeScript",
+          "Considering accessibility from the integration phase (semantics, focus, contrast)",
+          "Maintaining awareness of technical debt"
+        ]
+      },
+      "part4": {
+        "title": "Code evolution",
+        "summary": "Evolve existing code progressively",
+        "details": [
+          "Analyzing existing code before making changes",
+          "Applying targeted fixes rather than full rewrites",
+          "Refactoring incrementally when necessary"
+        ]
+      },
+      "part5": {
+        "title": "Collaboration",
+        "summary": "Work effectively with designers and product teams",
+        "details": [
+          "Regular exchanges with designers and product teams",
+          "Participating in code reviews",
+          "Taking feedback into account and iterating accordingly"
+        ]
+      }
     },
-    "intro": "I've been learning web development for about 2 years now, and I'm always eager to learn more in this fast paced industry.",
+    "intro": "My goal is to adopt a pragmatic, quality-oriented approach: understand the need, design an appropriate solution, and deliver clean, maintainable, and reliable code.",
     "part1": "Some technologies I've worked with:"
   },
   "work": {

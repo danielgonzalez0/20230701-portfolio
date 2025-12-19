@@ -1,284 +1,508 @@
-[
-  {
-    "cover": {
-      "desktop": "https://i.imgur.com/xiArDNL.png",
-      "mobile": "https://i.imgur.com/PlyAUlr.png",
-      "tablet": "https://i.imgur.com/H7jv2E6.png"
-    },
-    "description": {
-      "en": "Crypto Currency Dashboard Based on the Coingecko API. Ability to filter, sort, and save favorite cryptocurrencies. Option to exclude stable coins.",
-      "fr": "Tableau de bord des crypto-monnaies basé sur l'API Coingecko. Possibilité de filtrer, trier et enregistrer vos crypto-monnaies préférées. Option pour exclure les stable coins."
-    },
-    "features": {
-      "en": [
-        "react router",
-        "functional components",
-        "tables, charts",
-        "filters, sorts, favorites features",
-        "responsive design",
-        "documentation with JSDoc and proptypes"
+{
+  "data": [
+    {
+      "cover": {
+        "desktop": "https://i.imgur.com/H0KAZRM.png",
+        "mobile": "https://i.imgur.com/vWKFK2m.png",
+        "tablet": "https://i.imgur.com/8BQ2jAt.png"
+      },
+      "description": {
+        "en": "Fullstack budget management app built as part of my CDA program with others developers. I focused on a clean architecture, a structured design system (design tokens), and a secure API (JWT, roles).",
+        "fr": "Application fullstack de gestion budgétaire réalisée dans le cadre de mon titre CDA en collaboration avec d'autres développeurs. Je me suis concentré sur une architecture propre, un Design System structuré (Design tokens) et une API sécurisée (JWT, rôles)."
+      },
+      "features": {
+        "en": [
+          "Angular front (signals, RxJS) with form validation",
+          "Spring Boot REST API secured with JWT (roles)",
+          "MySQL database design and CRUD workflows",
+          "Docker setup for local environment",
+          "CI/CD basics with GitHub Actions",
+          "Design tokens and reusable UI foundations"
+        ],
+        "fr": [
+          "Front Angular (signals, RxJS) avec validation des formulaires",
+          "API REST Spring Boot sécurisée (JWT, rôles)",
+          "Modélisation MySQL et workflows CRUD",
+          "Docker pour l’environnement local",
+          "Bases de CI/CD avec GitHub Actions",
+          "Design tokens et socle UI réutilisable"
+        ]
+      },
+      "id": 7,
+      "keywords": ["fullstack", "budget", "design-system", "security", "jwt"],
+      "pictures": [
+       "https://i.imgur.com/H0KAZRM.png",
+       "https://i.imgur.com/vWKFK2m.png",
+       "https://i.imgur.com/8BQ2jAt.png"
       ],
-      "fr": [
-        "react router",
-        "composants fonctionnels",
-        "tableau et graphiques",
-        "fonctionnalités de filtre, tri et favoris",
-        "responsive design",
-        "documentation avec JSDoc et proptypes"
-      ]
+      "project": "Pecunia",
+      "tags": {
+        "en": [
+          "angular",
+          "typescript",
+          "rxjs",
+          "Signals",
+          "spring-boot",
+          "Hibernate",
+          "VPS",
+          "mysql",
+          "jwt",
+          "docker",
+          "CI/CD"
+        ],
+        "fr": [
+          "angular",
+          "typescript",
+          "rxjs",
+          "Signals",
+          "spring-boot",
+          "Hibernate",
+          "VPS",
+          "mysql",
+          "jwt",
+          "docker",
+          "CI/CD"
+        ]
+      },
+      "title": {
+        "en": "Pecunia – Budget management app",
+        "fr": "Pecunia – Application de gestion budgétaire"
+      },
+      "urlCode": "https://github.com/Pecunia-App",
+      "urlDemo": "https://pecuniapp.com/"
     },
-    "id": 4,
-    "keywords": ["react-application", "dashboard", "charts"],
-    "pictures": [
-      "https://i.imgur.com/i2eq0VE.png",
-      "https://i.imgur.com/dJP1Pok.png",
-      "https://i.imgur.com/wHWQfF1.png",
-      "https://i.imgur.com/Fkh7ljZ.png"
-    ],
-    "project": "Dashboard Crypto",
-    "tags": {
-      "en": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "prop-types",
-        "redux",
-        "recharts",
-        "axios",
-        "api Coingecko"
+    {
+      "cover": {
+        "desktop": "https://i.imgur.com/RzwyVWZ.png",
+        "mobile": "https://i.imgur.com/dQpHu31.png",
+        "tablet": "https://i.imgur.com/s9R9b0g.png"
+      },
+      "description": {
+        "en": "React application for playing quizzes. The front end is developed in react and I use apollo-client to retrieve the data.  For the back end I used apollo-server and graphQL. CI/CD workflow with github actions.",
+        "fr": "Application React pour jouer à des quiz. Le front est développé en react et j'utilise apollo-client pour récupérer les données. Pour le back j'ai utilisé apollo-server et graphQL. Workflow CI/CD avec github actions."
+      },
+      "features": {
+        "en": [
+          "react router",
+          "functional components",
+          "filters, favorites features",
+          "Styled with CSS through styled-components",
+          "'the movie database' API for movie and TV show data",
+          "API calls handle with react-query (TanStack)",
+          "Custom-built components for sliders",
+          "Firebase authetification and database",
+          "responsive design"
+        ],
+        "fr": [
+          "react router",
+          "composants fonctionnels",
+          "filtres, fonctionnalité de favoris",
+          "Styled-components pour le style CSS",
+          "'The Movie Database pours les données sur les films et séries",
+          "Appels à l'API gérés avec react-query (TanStack)",
+          "Composants personnalisés pour les caroussels",
+          "Firebase pour l'authentification et la base de données",
+          "responsive design"
+        ]
+      },
+      "id": 6,
+      "keywords": ["react-application", "dashboard", "charts"],
+      "pictures": [
+        "https://i.imgur.com/i2eq0VE.png",
+        "https://i.imgur.com/dJP1Pok.png",
+        "https://i.imgur.com/wHWQfF1.png",
+        "https://i.imgur.com/Fkh7ljZ.png"
       ],
-      "fr": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "prop-types",
-        "redux",
-        "recharts",
-        "axios",
-        "api Coingecko"
-      ]
+      "project": "React quiz app",
+      "tags": {
+        "en": [
+          "react",
+          "typescript",
+          "styled-components",
+          "redux",
+          "graphQL",
+          "apollo-server",
+          "CI/CD",
+          "vitest"
+        ],
+        "fr": [
+          "react",
+          "typescript",
+          "styled-components",
+          "redux",
+          "graphQL",
+          "apollo-server",
+          "CI/CD",
+          "vitest"
+        ]
+      },
+      "title": {
+        "en": "Frontend quiz app",
+        "fr": "Frontend quiz app"
+      },
+      "urlCode": "https://github.com/danielgonzalez0/20240119-TS-React-frontend-quizz-app",
+      "urlDemo": "https://20240119-ts-react-frontend-quizz-app.vercel.app/"
     },
-    "title": {
-      "en": "Dashboard Crypto",
-      "fr": "Dashboard Crypto"
-    },
-    "urlCode": "https://github.com/danielgonzalez0/TP4-crypto-watch-dashboard-react",
-    "urlDemo": "https://tp-4-crypto-watch-dashboard-react.vercel.app/"
-  },
-  {
-    "cover": {
-      "desktop": "https://i.imgur.com/i2eq0VE.png",
-      "mobile": "https://i.imgur.com/JOBRvbP.png",
-      "tablet": "https://i.imgur.com/LbSwN0L.png"
-    },
-    "description": {
-      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the main goal was to switch a jQuery library to React. Specifications was to make a new version of the 'Create Employee' and 'Employee List' pages with React, add a state management system, ensure that everything is consistent in terms of style",
-      "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif principal était de passer d'une bibliothèque jQuery à React. Les spécifications consistaient à créer une nouvelle version des pages 'Create Employee' et 'Employee List' avec React, à ajouter un système de gestion d'état, et à veiller à ce que tout soit cohérent en termes de style."
-    },
-    "features": {
-      "en": [
-        "react router",
-        "functional components",
-        "use redux toolkit to create a global state manager",
-        "complexe table and form implementation",
-        "responsive design",
-        "documentation with JSDoc and proptypes"
+    {
+      "cover": {
+        "desktop": "https://i.imgur.com/OhLkGxr.png",
+        "mobile": "https://i.imgur.com/Lq2m15J.png",
+        "tablet": "https://i.imgur.com/hcZao2M.png"
+      },
+      "description": {
+        "en": "This is a personal project aimed at creating a clone of the Disney+ website using React. The project utilizes 'the movie database' API for data retrieval, Firebase for simulating user authentication and data storage, all without the need for a dedicated back-end. I use my personal components for sliders and the application is responsive and can be used on mobile phones, with touch event management.",
+        "fr": "Projet personnel visant à créer un clone du site Disney+ en utilisant React. L'application utilise l'API 'the movie database' pour la récupération des données, Firebase pour simuler l'authentification des utilisateurs et le stockage des données, le tout sans avoir besoin d'un back-end dédié. J'utilise mes propres composants pour les sliders et l'application est responsive et peut être utilisée sur les téléphones mobiles, avec la gestion des événements tactiles."
+      },
+      "features": {
+        "en": [
+          "react router",
+          "functional components",
+          "filters, favorites features",
+          "Styled with CSS through styled-components",
+          "'the movie database' API for movie and TV show data",
+          "API calls handle with react-query (TanStack)",
+          "Custom-built components for sliders",
+          "Firebase authetification and database",
+          "responsive design"
+        ],
+        "fr": [
+          "react router",
+          "composants fonctionnels",
+          "filtres, fonctionnalité de favoris",
+          "Styled-components pour le style CSS",
+          "'The Movie Database pours les données sur les films et séries",
+          "Appels à l'API gérés avec react-query (TanStack)",
+          "Composants personnalisés pour les caroussels",
+          "Firebase pour l'authentification et la base de données",
+          "responsive design"
+        ]
+      },
+      "id": 5,
+      "keywords": ["react-application", "dashboard", "charts"],
+      "pictures": [
+        "https://i.imgur.com/i2eq0VE.png",
+        "https://i.imgur.com/dJP1Pok.png",
+        "https://i.imgur.com/wHWQfF1.png",
+        "https://i.imgur.com/Fkh7ljZ.png"
       ],
-      "fr": [
-        "react router",
-        "composants fonctionnels",
-        "utiliser Redux Toolkit pour créer un gestionnaire d'état global",
-        "mise en place de tableaux et de formulaires complexes",
-        "responsive design",
-        "documentation avec JSDoc et proptypes"
-      ]
+      "project": "Disney Plus clone",
+      "tags": {
+        "en": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "styled-components",
+          "redux",
+          "firebase",
+          "react-query",
+          "react-player",
+          "api TMDB"
+        ],
+        "fr": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "styled-components",
+          "redux",
+          "firebase",
+          "react-query",
+          "react-player",
+          "api TMDB"
+        ]
+      },
+      "title": {
+        "en": "Disney Plus Clone",
+        "fr": "Disney Plus Clone"
+      },
+      "urlCode": "https://github.com/danielgonzalez0/20230812-Disney-plus-test",
+      "urlDemo": "https://20230812-disney-plus-test.vercel.app/"
     },
-    "id": 1,
-    "keywords": ["react-application", "dashboard", "formulaires"],
-    "pictures": [
-      "https://i.imgur.com/i2eq0VE.png",
-      "https://i.imgur.com/dJP1Pok.png",
-      "https://i.imgur.com/wHWQfF1.png",
-      "https://i.imgur.com/Fkh7ljZ.png"
-    ],
-    "project": "HRnet",
-    "tags": {
-      "en": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "prop-types",
-        "redux-toolkit",
-        "react-table",
-        "react-hook-form"
+    {
+      "cover": {
+        "desktop": "https://i.imgur.com/xiArDNL.png",
+        "mobile": "https://i.imgur.com/PlyAUlr.png",
+        "tablet": "https://i.imgur.com/H7jv2E6.png"
+      },
+      "description": {
+        "en": "Crypto Currency Dashboard Based on the Coingecko API. Ability to filter, sort, and save favorite cryptocurrencies. Option to exclude stable coins.",
+        "fr": "Tableau de bord des crypto-monnaies basé sur l'API Coingecko. Possibilité de filtrer, trier et enregistrer vos crypto-monnaies préférées. Option pour exclure les stable coins."
+      },
+      "features": {
+        "en": [
+          "react router",
+          "functional components",
+          "tables, charts",
+          "filters, sorts, favorites features",
+          "responsive design",
+          "documentation with JSDoc and proptypes"
+        ],
+        "fr": [
+          "react router",
+          "composants fonctionnels",
+          "tableau et graphiques",
+          "fonctionnalités de filtre, tri et favoris",
+          "responsive design",
+          "documentation avec JSDoc et proptypes"
+        ]
+      },
+      "id": 4,
+      "keywords": [
+        "react-application",
+        "web integration",
+        "Firebase",
+        "styled-components"
       ],
-      "fr": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "prop-types",
-        "redux-toolkit",
-        "react-table",
-        "react-hook-form"
-      ]
-    },
-    "title": {
-      "en": "HRnet",
-      "fr": "HRnet"
-    },
-    "urlCode": "https://github.com/danielgonzalez0/P14-OC-20230612-HRnet",
-    "urlDemo": "https://p14-oc-20230612-h-rnet.vercel.app/"
-  },
-  {
-    "cover": {
-      "desktop": "https://i.imgur.com/ScHROCe.png",
-      "mobile": "https://i.imgur.com/DLcwzju.png",
-      "tablet": "https://i.imgur.com/3JeGqwZ.png"
-    },
-    "description": {
-      "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines for image galleries, dropdown buttons and global structure of the application like logical structure, 1 composent per file, using props and states,...",
-      "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif était de développer une application web avec React et React Router, en utilisant des maquettes Figma comme base. Des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
-    },
-    "features": {
-      "en": [
-        "react router",
-        "functional components",
-        "burger menu for navivation",
-        "carrousel for image galleries",
-        "keyboard navigation for image galleries",
-        "dropdown button",
-        "responsive design",
-        "errors handling for url"
+      "pictures": [
+        "https://i.imgur.com/i2eq0VE.png",
+        "https://i.imgur.com/dJP1Pok.png",
+        "https://i.imgur.com/wHWQfF1.png",
+        "https://i.imgur.com/Fkh7ljZ.png"
       ],
-      "fr": [
-        "react router",
-        "composants fonctionnels",
-        "burger menu pour la navigation",
-        "carrousel pour les galeries d'images",
-        "navigation au clavier pour les galeries d'images",
-        "bouton déroulant",
-        "responsive design",
-        "gestion des erreurs pour les urls"
-      ]
+      "project": "Dashboard Crypto",
+      "tags": {
+        "en": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "prop-types",
+          "redux",
+          "recharts",
+          "axios",
+          "api Coingecko"
+        ],
+        "fr": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "prop-types",
+          "redux",
+          "recharts",
+          "axios",
+          "api Coingecko"
+        ]
+      },
+      "title": {
+        "en": "Dashboard Crypto",
+        "fr": "Dashboard Crypto"
+      },
+      "urlCode": "https://github.com/danielgonzalez0/TP4-crypto-watch-dashboard-react",
+      "urlDemo": "https://tp-4-crypto-watch-dashboard-react.vercel.app/"
     },
-    "id": 3,
-    "keywords": [
-      "Équipements de base",
-      "Micro-Ondes",
-      "Douche italienne",
-      "Frigo",
-      "WIFI"
-    ],
-    "pictures": [
-      "https://i.imgur.com/oE6i6AV.png",
-      "https://i.imgur.com/jZCzprJ.png",
-      "https://i.imgur.com/QHdEzpQ.png",
-      "https://i.imgur.com/HPYZv6y.png",
-      "https://i.imgur.com/4oyYyp2.png"
-    ],
-    "project": "Kasa",
-    "tags": {
-      "en": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "prop-types",
-        "accessibility"
+    {
+      "cover": {
+        "desktop": "https://i.imgur.com/i2eq0VE.png",
+        "mobile": "https://i.imgur.com/JOBRvbP.png",
+        "tablet": "https://i.imgur.com/LbSwN0L.png"
+      },
+      "description": {
+        "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the main goal was to switch a jQuery library to React. Specifications was to make a new version of the 'Create Employee' and 'Employee List' pages with React, add a state management system, ensure that everything is consistent in terms of style",
+        "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif principal était de passer d'une bibliothèque jQuery à React. Les spécifications consistaient à créer une nouvelle version des pages 'Create Employee' et 'Employee List' avec React, à ajouter un système de gestion d'état, et à veiller à ce que tout soit cohérent en termes de style."
+      },
+      "features": {
+        "en": [
+          "react router",
+          "functional components",
+          "use redux toolkit to create a global state manager",
+          "complexe table and form implementation",
+          "responsive design",
+          "documentation with JSDoc and proptypes"
+        ],
+        "fr": [
+          "react router",
+          "composants fonctionnels",
+          "utiliser Redux Toolkit pour créer un gestionnaire d'état global",
+          "mise en place de tableaux et de formulaires complexes",
+          "responsive design",
+          "documentation avec JSDoc et proptypes"
+        ]
+      },
+      "id": 1,
+      "keywords": ["react-application", "dashboard", "formulaires"],
+      "pictures": [
+        "https://i.imgur.com/i2eq0VE.png",
+        "https://i.imgur.com/dJP1Pok.png",
+        "https://i.imgur.com/wHWQfF1.png",
+        "https://i.imgur.com/Fkh7ljZ.png"
       ],
-      "fr": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "prop-types",
-        "accessibilité"
-      ]
+      "project": "HRnet",
+      "tags": {
+        "en": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "prop-types",
+          "redux-toolkit",
+          "react-table",
+          "react-hook-form"
+        ],
+        "fr": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "prop-types",
+          "redux-toolkit",
+          "react-table",
+          "react-hook-form"
+        ]
+      },
+      "title": {
+        "en": "HRnet",
+        "fr": "HRnet"
+      },
+      "urlCode": "https://github.com/danielgonzalez0/P14-OC-20230612-HRnet",
+      "urlDemo": "https://p14-oc-20230612-h-rnet.vercel.app/"
     },
-    "title": {
-      "en": "Kasa",
-      "fr": "Kasa"
-    },
-    "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
-    "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
-  },
-  {
-    "cover": {
-      "desktop": "https://i.imgur.com/PePjqXg.png",
-      "mobile": "https://i.imgur.com/w1Z78w3.png",
-      "tablet": "https://i.imgur.com/kjPsQtq.png"
-    },
-    "description": {
-      "en": "The project is part of a specialized training in web development offered by OpenClassrooms. The goal was to build a prototype for a social network for a fictional company. For the database, I used MySQL. For the backend, I used Node.js and Express, and React for the frontend.",
-      "fr": "Le projet fait partie d'une formation spécialisée dans le développement web dispensée par OpenClassrooms. L'objectif était de construire un prototype de réseau social pour une entreprise fictive. Pour la base de données j'ai utilisé MySQL. Pour le backend j'ai utilisé nodeJS et Express et React pour le front"
-    },
-    "features": {
-      "en": [
-        "React Router",
-        "Functional components",
-        "Using Redux Toolkit to create a global state manager",
-        "Like system",
-        "Responsive design",
-        "Authentication system with token",
-        "Password encryption",
-        "Forms with input control"
+    {
+      "cover": {
+        "desktop": "https://i.imgur.com/ScHROCe.png",
+        "mobile": "https://i.imgur.com/DLcwzju.png",
+        "tablet": "https://i.imgur.com/3JeGqwZ.png"
+      },
+      "description": {
+        "en": "The project is part of a front-end training course specialising in React delivery by openclassrooms. the goal was to develop a web application with react and react-router based on figma templates. Mocked data were given and some technical guidlines for image galleries, dropdown buttons and global structure of the application like logical structure, 1 composent per file, using props and states,...",
+        "fr": "Le projet fait partie d'une formation spécialisée dans le développement front-end avec React dispensée par OpenClassrooms. L'objectif était de développer une application web avec React et React Router, en utilisant des maquettes Figma comme base. Des données fictives ont été fournies, ainsi que des directives techniques pour les galeries d'images, les boutons déroulants et la structure globale de l'application (structure logique, un composant par fichier, utilisation de props et de states, etc.)"
+      },
+      "features": {
+        "en": [
+          "react router",
+          "functional components",
+          "burger menu for navivation",
+          "carrousel for image galleries",
+          "keyboard navigation for image galleries",
+          "dropdown button",
+          "responsive design",
+          "errors handling for url"
+        ],
+        "fr": [
+          "react router",
+          "composants fonctionnels",
+          "burger menu pour la navigation",
+          "carrousel pour les galeries d'images",
+          "navigation au clavier pour les galeries d'images",
+          "bouton déroulant",
+          "responsive design",
+          "gestion des erreurs pour les urls"
+        ]
+      },
+      "id": 2,
+      "keywords": [
+        "Équipements de base",
+        "Micro-Ondes",
+        "Douche italienne",
+        "Frigo",
+        "WIFI"
       ],
-      "fr": [
-        "react router",
-        "composants fonctionnels",
-        "utiliser Redux Toolkit pour créer un gestionnaire d'état global",
-        "système de like",
-        "responsive design",
-        "système d'authentification avec token",
-        "cryptage du mot de passe",
-        "formulaires avec contrôle de la saisie"
-      ]
-    },
-    "id": 1,
-    "keywords": ["react-application", "SQL", "formulaires", "API"],
-    "pictures": [
-      "https://i.imgur.com/PePjqXg.png",
-      "https://i.imgur.com/w1Z78w3.png",
-      "https://i.imgur.com/kjPsQtq.png"
-    ],
-    "project": "Groupomania - social network",
-    "tags": {
-      "en": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "redux-toolkit",
-        "MySQL",
-        "Express",
-        "node.js",
-        "JWT",
-        "bcrypt",
-        "multer"
+      "pictures": [
+        "https://i.imgur.com/oE6i6AV.png",
+        "https://i.imgur.com/jZCzprJ.png",
+        "https://i.imgur.com/QHdEzpQ.png",
+        "https://i.imgur.com/HPYZv6y.png",
+        "https://i.imgur.com/4oyYyp2.png"
       ],
-      "fr": [
-        "react",
-        "react-router-dom",
-        "javascript",
-        "sass",
-        "redux-toolkit",
-        "MySQL",
-        "Express",
-        "node.js",
-        "JWT",
-        "bcrypt",
-        "multer"
-      ]
+      "project": "Kasa",
+      "tags": {
+        "en": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "prop-types",
+          "accessibility"
+        ],
+        "fr": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "prop-types",
+          "accessibilité"
+        ]
+      },
+      "title": {
+        "en": "Kasa",
+        "fr": "Kasa"
+      },
+      "urlCode": "https://github.com/danielgonzalez0/P11-OC-20230327-Kasa",
+      "urlDemo": "https://p11-oc-20230327-kasa.vercel.app/"
     },
-    "title": {
-      "en": "Groupomania - social network",
-      "fr": "Groupomania - réseau social"
-    },
-    "urlCode": "https://github.com/danielgonzalez0/DanielGonzalez_7_28042022",
-    "urlDemo": "https://www.youtube.com/watch?v=ATJyLR6_BIg"
-  }
-]
+    {
+      "cover": {
+        "desktop": "https://i.imgur.com/PePjqXg.png",
+        "mobile": "https://i.imgur.com/w1Z78w3.png",
+        "tablet": "https://i.imgur.com/kjPsQtq.png"
+      },
+      "description": {
+        "en": "The project is part of a specialized training in web development offered by OpenClassrooms. The goal was to build a prototype for a social network for a fictional company. For the database, I used MySQL. For the backend, I used Node.js and Express, and React for the frontend.",
+        "fr": "Le projet fait partie d'une formation spécialisée dans le développement web dispensée par OpenClassrooms. L'objectif était de construire un prototype de réseau social pour une entreprise fictive. Pour la base de données j'ai utilisé MySQL. Pour le backend j'ai utilisé nodeJS et Express et React pour le front"
+      },
+      "features": {
+        "en": [
+          "React Router",
+          "Functional components",
+          "Using Redux Toolkit to create a global state manager",
+          "Like system",
+          "Responsive design",
+          "Authentication system with token",
+          "Password encryption",
+          "Forms with input control"
+        ],
+        "fr": [
+          "react router",
+          "composants fonctionnels",
+          "utiliser Redux Toolkit pour créer un gestionnaire d'état global",
+          "système de like",
+          "responsive design",
+          "système d'authentification avec token",
+          "cryptage du mot de passe",
+          "formulaires avec contrôle de la saisie"
+        ]
+      },
+      "id": 3,
+      "keywords": ["react-application", "SQL", "formulaires", "API"],
+      "pictures": [
+        "https://i.imgur.com/PePjqXg.png",
+        "https://i.imgur.com/w1Z78w3.png",
+        "https://i.imgur.com/kjPsQtq.png"
+      ],
+      "project": "Groupomania - social network",
+      "tags": {
+        "en": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "redux-toolkit",
+          "MySQL",
+          "Express",
+          "node.js",
+          "JWT",
+          "bcrypt",
+          "multer"
+        ],
+        "fr": [
+          "react",
+          "react-router-dom",
+          "javascript",
+          "sass",
+          "redux-toolkit",
+          "MySQL",
+          "Express",
+          "node.js",
+          "JWT",
+          "bcrypt",
+          "multer"
+        ]
+      },
+      "title": {
+        "en": "Groupomania - social network",
+        "fr": "Groupomania - réseau social"
+      },
+      "urlCode": "https://github.com/danielgonzalez0/DanielGonzalez_7_28042022",
+      "urlDemo": "https://www.youtube.com/watch?v=ATJyLR6_BIg"
+    }
+  ]
+}
