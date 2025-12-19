@@ -5,19 +5,21 @@ import { HashLink as Link } from 'react-router-hash-link';
 const ContactBtn = () => {
   const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
-    const footerHeight =
-      document.getElementsByTagName('footer')[0].offsetHeight;
-    const contactHeight = document.getElementById('contact').offsetHeight;
-    window.addEventListener('scroll', () => {
-      if (
+    const checkVisibility = () => {
+      const footer = document.querySelector('footer');
+      const contact = document.getElementById('contact');
+      if (!footer || !contact) return;
+      const footerHeight = footer.offsetHeight;
+      const contactHeight = contact.offsetHeight;
+      const shouldHide =
         window.scrollY + window.innerHeight + footerHeight + contactHeight >
-        document.body.offsetHeight
-      ) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-    });
+        document.body.offsetHeight;
+      setIsVisible(!shouldHide);
+    };
+    window.addEventListener('scroll', checkVisibility);
+    return () => {
+      window.removeEventListener('scroll', checkVisibility);
+    };
   }, []);
   return (
     isVisible && (
