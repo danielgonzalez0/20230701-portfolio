@@ -15,7 +15,7 @@ import typeSciptLogo from '../../../assets/logo/typescript.svg';
 import mySQLLogo from '../../../assets/logo/mysql-3.svg';
 import expressLogo from '../../../assets/logo/express-109.svg';
 import mongoLogo from '../../../assets/logo/mongodb-icon-1.svg';
-import cv from '../../../assets/cv-daniel-gonzalez.pdf';
+import cv from '../../../assets/Daniel_Gonzalez_CV_front.pdf';
 import { useSelector } from 'react-redux';
 import useAnalyticsEventTracker from '../../../utils/useAnalyticsEventTracker';
 
@@ -24,6 +24,7 @@ const Skills = () => {
   const darkMode = useSelector((state) => state.status.isDarkMode);
   const language = useSelector((state) => state.status.language);
   const gaEventTracker = useAnalyticsEventTracker('skills-section');
+  console.log(t('categories', { ns: 'tools', returnObjects: true }));
 
   return (
     <section id="skills">
@@ -45,23 +46,28 @@ const Skills = () => {
         <div className="skills-main">
           <div className="skills-main-card">
             <span className="fa-regular fa-window-maximize"></span>
-            <p>{t('skills.skills.part1')}</p>
+            <p>{t('skills.skills.part1.summary')}</p>
           </div>
           <div className="skills-main-card">
             <span className="fa-solid fa-table-columns"></span>
-            <p>{t('skills.skills.part2')}</p>
+            <p>{t('skills.skills.part2.summary')}</p>
           </div>
           <div className="skills-main-card">
             <span className="fa-solid fa-code"></span>
-            <p>{t('skills.skills.part3')}</p>
+            <p>{t('skills.skills.part3.summary')}</p>
           </div>
           <div className="skills-main-card">
             <span className="fa-solid fa-laptop"></span>
-            <p>{t('skills.skills.part4')}</p>
+            <p>{t('skills.skills.part4.summary')}</p>
+            {/* <ul>
+              {t('skills.skills.part4.details', { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul> */}
           </div>
           <div className="skills-main-card">
             <span className="fa-solid fa-gears"></span>
-            <p>{t('skills.skills.part5')}</p>
+            <p>{t('skills.skills.part5.summary')}</p>
           </div>
         </div>
         <div className="skills-content">
@@ -132,26 +138,24 @@ const Skills = () => {
                 <span>{language === 'en' ? 'Tools' : 'Outils'}</span>
               </p>
               <ul>
-                <li>
-                  <span className="fa-solid fa-check"></span>
-                  <span>Git + Github</span>
-                </li>
-                <li>
-                  <span className="fa-solid fa-check"></span>
-                  <span>Chrome DevTools</span>
-                </li>
-                <li>
-                  <span className="fa-solid fa-check"></span>
-                  <span>
-                    {language === 'en' ? 'Command Line' : 'Ligne de commande'}
-                  </span>
-                </li>
-                <li>
-                  <span className="fa-solid fa-check"></span>
-                  <span>Postman</span>
-                </li>
+                {t('tools.categories', { ns: 'tools', returnObjects: true }).map((cat, idx) => (
+                  <>
+                    <h4 key={idx}>{cat.title}</h4>
+                    <ul className="tools-category-list">
+                      {cat.items.map((item, i) => (
+                        <li key={i}>
+                          <span className="fa-solid fa-check"></span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ))}
               </ul>
             </div>
+          </div>
+          <div className="skills-other-section">
+
             <div className="skills-other-list-card">
               <p>
                 <span className="fa-regular fa-lightbulb"></span>
@@ -180,12 +184,13 @@ const Skills = () => {
                   <span className="fa-solid fa-check"></span>
                   <span>
                     {language === 'en'
-                      ? 'Unit Tests (jest)'
-                      : 'Tests unitaires (Jest)'}
+                      ? 'Tests'
+                      : 'Tests'}
                   </span>
                 </li>
               </ul>
             </div>
+
           </div>
         </div>
       </div>
