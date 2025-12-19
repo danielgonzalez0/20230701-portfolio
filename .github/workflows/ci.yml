@@ -26,25 +26,7 @@ jobs:
         run: npm run lint
 
       - name: Run tests (with coverage)
-        env: 
-          REACT_APP_FB_APIKEY: ${{ vars.REACT_APP_FB_APIKEY }}
-          REACT_APP_FB_AUTHDOMAIN: ${{ vars.REACT_APP_FB_AUTHDOMAIN }}
-          REACT_APP_FB_PROJECTID: ${{ vars.REACT_APP_FB_PROJECTID }}
-          REACT_APP_FB_STORAGEBUCKET: ${{ vars.REACT_APP_FB_STORAGEBUCKET }}
-          REACT_APP_FB_MESSAGINGSENDERID: ${{ vars.REACT_APP_FB_MESSAGINGSENDERID }}
-          REACT_APP_FB_APPID: ${{ vars.REACT_APP_FB_APPID }}
-          REACT_APP_FB_MEASUREMENTID: ${{ vars.REACT_APP_FB_MEASUREMENTID }}
-          REACT_APP_FIREBASE_URL: ${{ vars.REACT_APP_FIREBASE_URL }}
         run: npm test
 
       - name: Build
-        env:
-          REACT_APP_FB_APIKEY: ${{ vars.REACT_APP_FB_APIKEY }}
-          REACT_APP_FB_AUTHDOMAIN: ${{ vars.REACT_APP_FB_AUTHDOMAIN }}
-          REACT_APP_FB_PROJECTID: ${{ vars.REACT_APP_FB_PROJECTID }}
-          REACT_APP_FB_STORAGEBUCKET: ${{ vars.REACT_APP_FB_STORAGEBUCKET }}
-          REACT_APP_FB_MESSAGINGSENDERID: ${{ vars.REACT_APP_FB_MESSAGINGSENDERID }}
-          REACT_APP_FB_APPID: ${{ vars.REACT_APP_FB_APPID }}
-          REACT_APP_FB_MEASUREMENTID: ${{ vars.REACT_APP_FB_MEASUREMENTID }}
-          REACT_APP_FIREBASE_URL: ${{ vars.REACT_APP_FIREBASE_URL }}
         run: npm run build
